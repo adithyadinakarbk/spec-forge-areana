@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary":"#006b5d","surface-variant":"#d9e3f6","on-primary-fixed-variant":"#2d486d","on-secondary":"#ffffff","surface":"#f8f9ff","outline":"#74777f","on-error":"#ffffff","inverse-primary":"#adc8f5","primary-fixed-dim":"#adc8f5","tertiary-container":"#2a3a4f","surface-tint":"#455f87","on-background":"#121c2a","on-primary-fixed":"#001c3b","primary-container":"#1e3a5f","tertiary":"#142538","surface-container-low":"#eff4ff","on-tertiary":"#ffffff","on-secondary-container":"#006f61","surface-container-high":"#dee9fc","outline-variant":"#c4c6cf","background":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-secondary-fixed-variant":"#005046","on-secondary-fixed":"#00201b","tertiary-fixed-dim":"#b7c8e1","on-surface":"#121c2a","surface-container-lowest":"#ffffff","surface-container-highest":"#d9e3f6","surface-dim":"#d0dbed","on-error-container":"#93000a","on-surface-variant":"#43474e","tertiary-fixed":"#d3e4fe","on-tertiary-fixed-variant":"#38485d","primary":"#022448","surface-container":"#e6eeff","on-tertiary-fixed":"#0b1c30","surface-bright":"#f8f9ff","primary-fixed":"#d5e3ff","error-container":"#ffdad6","secondary-fixed":"#83f6e0","on-primary":"#ffffff","secondary-fixed-dim":"#65dac4","error":"#ba1a1a","inverse-surface":"#27313f","secondary-container":"#80f3dd","on-primary-container":"#8aa4cf","on-tertiary-container":"#94a4bd"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-lg":"1.25rem","space-md":"0.875rem","space-sm":"0.5rem","space-2xl":"3rem","gutter":"1.5rem","space-xs":"0.25rem","space-xxs":"0.125rem","gutter-dense":"0.75rem","space-xl":"2rem","margin":"2rem","margin-compact":"1.25rem"},"fontFamily":{"headline-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"label-sm":["Inter"],"code-tabular":["Inter"],"label-lg":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-lg":["Plus Jakarta Sans"]},"fontSize":{"headline-xl":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.04em","fontWeight":"700"}],"code-tabular":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.01em","fontWeight":"500"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.005em","fontWeight":"400"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full h-16 bg-primary-container text-on-primary z-50 shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-sm"><img alt="SpecForge Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X2uj-S25Soos9sGxO4L87AKRE1gu3WcTlYgsIdJ3h4jLbMd_as2c7fZnw67T3zVUy4CgTdYVVZYlYxUgyF9LhoWFdwNSzdAJqn4j4TuWISuo5HqtEHyswv8L_0Mw9uK4j0SRd3CESED_pVK3dvOff-oPq7p0IItsYEmoh8gbH9naUVu4ynddVFlx8wyN2Ihz-qFlRAvAxVnLbAkVh1Ej_T4FwzqTOt2MshHbapGESX0A"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-primary">SpecForge</span></div><div class="h-6 w-px bg-outline-variant/30"></div><div class="flex items-center bg-tertiary-container/80 p-space-xxs rounded-lg border border-outline-variant/20"><button class="px-space-sm py-space-xxs rounded bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-space-xs" type="button"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>Author</button><button class="px-space-sm py-space-xxs rounded text-on-tertiary-container hover:text-on-secondary transition-colors font-label-md text-label-md" type="button">Reviewer</button><button class="px-space-sm py-space-xxs rounded text-on-tertiary-container hover:text-on-secondary transition-colors font-label-md text-label-md" type="button">HOD</button></div></div><div class="hidden xl:flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-tertiary-container/60 px-space-md py-space-xs rounded border border-outline-variant/20"><span class="font-code-tabular text-code-tabular text-on-primary-fixed">CS402: Distributed Systems (v2.3)</span><span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase">Under Review</span></div><div class="flex items-center gap-space-xs text-on-primary-container font-label-md text-label-md"><span class="material-symbols-outlined text-base">cloud_done</span><span>Auto-saved 2m ago</span></div></div><div class="flex items-center gap-space-md shrink-0"><button class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs rounded text-on-primary-container hover:text-on-primary hover:bg-tertiary-container/40 transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-lg">help_outline</span><span>Guidelines</span></button><button class="relative p-space-xs rounded text-on-primary-container hover:text-on-primary hover:bg-tertiary-container/40 transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-label-sm">3</span></button><div class="h-6 w-px bg-outline-variant/30"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right hidden lg:block"><div class="font-label-md text-label-md text-on-primary leading-tight">Dr. Aris Vance</div><div class="font-label-sm text-label-sm text-on-primary-container leading-tight">Assoc. Prof (CSE)</div></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVXZO1aJMm5THxjZ6rMyBYh_O6KmM5CGybQCgao9YjaoqufiYB2ZaAxWkjkjoOC5Z6nHKpKmtTctVMbOhySD4lFw3qAOtEL-eF2IAt76UKbDOuzeV3dTJwev48n38nUSNhL2hPDUKi82U6x32aIgQh0BJYYfM2OYZTUvSNB-2LJltP8LyTA-Y3tu52tFi5MnDcdkLb59r9L9kG4nInNT8eORP2-m6ODYFziFxXc0hc"/></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant/40 z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-md"><div class="px-space-sm py-space-xs mb-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline">Specification Pipeline</div><nav class="flex flex-col gap-space-xxs" data-active-classes="bg-secondary-container/30 text-secondary border-l-4 border-secondary font-label-lg"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors border-l-4 border-transparent font-label-md text-label-md" data-path="upload" href="#"><span class="material-symbols-outlined text-lg">cloud_upload</span><span>1. Upload</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors border-l-4 border-transparent font-label-md text-label-md" data-path="course-specification" href="#"><span class="material-symbols-outlined text-lg">description</span><span>2. Spec</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors border-l-4 border-transparent font-label-md text-label-md" data-path="curriculum-matrix" href="#"><span class="material-symbols-outlined text-lg">grid_view</span><span>3. CO–PO–PSO Map</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-colors bg-secondary-container/30 text-secondary border-l-4 border-secondary font-label-lg" data-path="validation-and-compliance" href="#"><span class="material-symbols-outlined text-lg">check_circle</span><span>4. Checks</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors border-l-4 border-transparent font-label-md text-label-md" data-path="approval-stages" href="#"><span class="material-symbols-outlined text-lg">alt_route</span><span>5. Workflow</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors border-l-4 border-transparent font-label-md text-label-md" data-path="publish-and-download" href="#"><span class="material-symbols-outlined text-lg">download</span><span>6. Export</span></a></nav></div><div class="p-space-md border-t border-outline-variant/40 bg-surface-container-low"><div class="flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-base">verified</span><div class="font-label-sm text-label-sm text-on-surface">NBA &amp; ABET Compliant</div></div><span class="px-space-xxs py-space-xxs rounded bg-surface-container-highest text-on-surface-variant font-code-tabular text-label-sm">24-25</span></div></div></aside><div class="pl-64"><main class="min-h-screen pt-16 bg-surface-container-low"><div class="max-w-[1366px] mx-auto p-gutter"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Navigation & Hero Section -->
+<section class="flex flex-col gap-space-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Curriculum</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="font-code-tabular text-code-tabular text-on-surface bg-surface-container px-space-xs py-space-xxs rounded">CS402</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-secondary font-label-lg text-label-lg">Compliance Checks</span>
+</nav>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mt-space-xs">
+<div class="flex flex-col gap-space-xxs max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-xxs rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">Audit Engine v4.8</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xxs">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span> Live Sync
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">
+          Automated Validation &amp; Accreditation Audit
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Real-time compliance checks across university academic regulations, credit-hour mandates, Bloom's level balance, and ABET/NBA accreditation criteria.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-all shadow-sm active:scale-95" id="btn-rerun-audit" type="button">
+<span class="material-symbols-outlined text-lg transition-transform" id="reload-icon">sync</span>
+<span>Re-run Full Audit</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded bg-surface-container-highest hover:bg-surface-variant text-on-surface font-label-lg text-label-lg transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-lg">picture_as_pdf</span>
+<span class="hidden sm:inline">Export Report</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Metric Scorecard Bento Grid -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Compliance Score -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider block">Overall Compliance</span>
+<span class="font-headline-xl text-headline-xl text-primary mt-space-xxs block tracking-tight">94%</span>
+</div>
+<div class="relative w-14 h-14 flex items-center justify-center shrink-0">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 40 40">
+<circle class="text-surface-container-high stroke-current" cx="20" cy="20" fill="transparent" r="15.915" stroke-width="4.5"></circle>
+<circle class="text-secondary stroke-current transition-all duration-1000 ease-out" cx="20" cy="20" fill="transparent" r="15.915" stroke-dasharray="94 100" stroke-linecap="round" stroke-width="4.5"></circle>
+</svg>
+<span class="absolute material-symbols-outlined text-secondary text-lg">verified</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs border-none flex items-center justify-between">
+<span class="px-space-xs py-space-xxs rounded bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+          Ready for Dept. Review
+        </span>
+<span class="font-code-tabular text-label-sm text-outline">+2.4% vs v2.2</span>
+</div>
+</div>
+<!-- Card 2: Blocking Errors -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md text-error uppercase tracking-wider block font-label-lg">Errors (Blocking)</span>
+<span class="font-headline-xl text-headline-xl text-error mt-space-xxs block tracking-tight">1</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-error-container text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">error</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-space-xs text-error font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-base">priority_high</span>
+<span>Must resolve before stage submission</span>
+</div>
+</div>
+<!-- Card 3: Advisory Warnings -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-tertiary-fixed-variant uppercase tracking-wider block font-label-lg">Warnings (Advisory)</span>
+<span class="font-headline-xl text-headline-xl text-on-background mt-space-xxs block tracking-tight">3</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Recommended curriculum edits</span>
+<span class="font-code-tabular text-label-sm text-outline">Non-blocking</span>
+</div>
+</div>
+<!-- Card 4: Passed Rules -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider block font-label-lg">Passed Rules</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-headline-xl text-headline-xl text-primary tracking-tight">24</span>
+<span class="font-headline-sm text-headline-sm text-outline">/ 28</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container/50 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-space-xs text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-base">check</span>
+<span>Institutional constraints fulfilled</span>
+</div>
+</div>
+</section>
+<!-- Interactive Filter Tabs -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between overflow-x-auto pb-space-xxs">
+<div class="flex items-center gap-space-xs bg-surface-container p-space-xxs rounded-xl shrink-0" id="filter-tabs">
+<button class="filter-tab active px-space-md py-space-xs rounded bg-surface-container-lowest text-primary shadow-sm font-label-lg text-label-lg flex items-center gap-space-xs transition-all" data-filter="all">
+<span>All Issues</span>
+<span class="px-space-xs rounded-full bg-surface-container-high text-on-surface font-code-tabular text-label-sm font-bold">4</span>
+</button>
+<button class="filter-tab px-space-md py-space-xs rounded hover:bg-surface-container-lowest/60 text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-all" data-filter="hours">
+<span>Credit &amp; Contact Hours</span>
+<span class="px-space-xs rounded-full bg-error-container text-error font-code-tabular text-label-sm font-bold">1</span>
+</button>
+<button class="filter-tab px-space-md py-space-xs rounded hover:bg-surface-container-lowest/60 text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-all" data-filter="bloom">
+<span>Bloom's Taxonomy Balance</span>
+<span class="px-space-xs rounded-full bg-surface-container-highest text-on-surface font-code-tabular text-label-sm">1</span>
+</button>
+<button class="filter-tab px-space-md py-space-xs rounded hover:bg-surface-container-lowest/60 text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-all" data-filter="matrix">
+<span>Outcome Mapping</span>
+<span class="px-space-xs rounded-full bg-surface-container-highest text-on-surface font-code-tabular text-label-sm">1</span>
+</button>
+<button class="filter-tab px-space-md py-space-xs rounded hover:bg-surface-container-lowest/60 text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-all" data-filter="syllabus">
+<span>Syllabus Content</span>
+<span class="px-space-xs rounded-full bg-surface-container-highest text-on-surface font-code-tabular text-label-sm">1</span>
+</button>
+</div>
+<div class="hidden md:flex items-center gap-space-sm pl-space-md text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-space-xxs"><span class="w-2.5 h-2.5 rounded-full bg-error"></span> 1 Blocking</span>
+<span class="flex items-center gap-space-xxs"><span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span> 2 Advisory</span>
+<span class="flex items-center gap-space-xxs"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> 1 Notice</span>
+</div>
+</div>
+<!-- Issues List Container -->
+<div class="flex flex-col gap-space-md" id="issues-container">
+<!-- Issue 1: Blocking Error (Contact Hours) -->
+<article class="issue-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="hours">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pl-space-xs">
+<div class="flex items-start gap-space-md max-w-4xl">
+<div class="w-10 h-10 rounded-lg bg-error-container text-error flex items-center justify-center shrink-0 mt-space-xxs">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">error</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-space-xs py-space-xxs rounded bg-error-container text-error font-label-sm text-label-sm uppercase font-bold">
+                  Blocking Error
+                </span>
+<span class="font-code-tabular text-code-tabular text-outline">RULE #CR-302</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-sm">my_location</span> Section 4.3: Module Breakdown
+                </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Total Contact Hours Discrepancy</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Module 3 specifies 10 hours and Module 4 specifies 8 hours, resulting in total lecture hours of <span class="font-bold text-error">42</span> (Exceeds prescribed 40 hours for a 3-credit course). The academic council regulation cap is strictly enforced.
+              </p>
+<!-- Mini contextual data visualization -->
+<div class="mt-space-xs p-space-sm rounded bg-surface-container-low flex flex-wrap items-center gap-space-lg text-label-sm font-code-tabular">
+<div>Prescribed: <span class="font-bold text-on-surface">40.0 hrs</span></div>
+<div>Allocated: <span class="font-bold text-error">42.0 hrs (+2.0h)</span></div>
+<div class="text-on-surface-variant">Lab: 28.0 hrs (Valid)</div>
+<div class="text-on-surface-variant">Tutorial: 14.0 hrs (Valid)</div>
+</div>
+</div>
+</div>
+<div class="flex lg:flex-col items-center lg:items-end gap-space-sm shrink-0 pl-space-xs lg:pl-0">
+<button class="w-full sm:w-auto px-space-md py-space-sm rounded bg-error text-on-error hover:opacity-90 font-label-lg text-label-lg transition-all shadow-sm flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+<span>Fix in Spec Editor</span>
+</button>
+<button class="w-full sm:w-auto px-space-md py-space-sm rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-all flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-base">auto_fix_high</span>
+<span>Auto-adjust Hours</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Issue 2: Warning (Outcome Mapping) -->
+<article class="issue-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="matrix">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pl-space-xs">
+<div class="flex items-start gap-space-md max-w-4xl">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-primary-container flex items-center justify-center shrink-0 mt-space-xxs">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">alt_route</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-space-xs py-space-xxs rounded bg-surface-container text-primary font-label-sm text-label-sm uppercase font-bold">
+                  Advisory Warning
+                </span>
+<span class="font-code-tabular text-code-tabular text-outline">ABET Criterion 3.4</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-sm">grid_on</span> Matrix: CO3 × PO4
+                </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Low PO4 (Investigation) Correlation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Course Outcome CO3 does not map to any critical investigative criteria while lab syllabus contains open-ended research assignments. Accreditation guidelines require minimum weight 2 correlation for distributed debugging exercises.
+              </p>
+<div class="mt-space-xs flex items-center gap-space-sm text-label-md font-label-md text-secondary">
+<span class="material-symbols-outlined text-base">info</span>
+<span>Recommended: Set CO3 × PO4 affinity node to Level 2 (Moderate)</span>
+</div>
+</div>
+</div>
+<div class="flex lg:flex-col items-center lg:items-end gap-space-sm shrink-0 pl-space-xs lg:pl-0">
+<button class="w-full sm:w-auto px-space-md py-space-sm rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-all flex items-center justify-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">table_chart</span>
+<span>Edit in Mapping Table</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Issue 3: Warning (Textbook Citation) -->
+<article class="issue-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="syllabus">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pl-space-xs">
+<div class="flex items-start gap-space-md max-w-4xl">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-primary-container flex items-center justify-center shrink-0 mt-space-xxs">
+<span class="material-symbols-outlined text-xl">menu_book</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-space-xs py-space-xxs rounded bg-surface-container text-primary font-label-sm text-label-sm uppercase font-bold">
+                  Advisory Warning
+                </span>
+<span class="font-code-tabular text-code-tabular text-outline">REF-AUDIT-08</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-sm">bookmark</span> Section 6.1: References
+                </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Outdated Textbook Edition Detected</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Reference <em>'Distributed Systems: Principles and Paradigms'</em> (Tanenbaum &amp; Steen) listed is 2nd Edition (2007). Current curriculum standard specifies the 4th Edition (2023) to cover modern cloud-native architectural patterns.
+              </p>
+<div class="mt-space-xs p-space-xs px-space-sm rounded bg-surface-container-low inline-flex items-center gap-space-xs text-label-sm font-code-tabular text-on-surface-variant">
+<span>ISBN-13: 978-9081540636 (Suggested replacement available)</span>
+</div>
+</div>
+</div>
+<div class="flex lg:flex-col items-center lg:items-end gap-space-sm shrink-0 pl-space-xs lg:pl-0">
+<button class="w-full sm:w-auto px-space-md py-space-sm rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-all flex items-center justify-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">published_with_changes</span>
+<span>Update Citation</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Issue 4: Notice / Info (Bloom's Taxonomy) -->
+<article class="issue-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="bloom">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pl-space-xs">
+<div class="flex items-start gap-space-md max-w-4xl">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/50 text-secondary flex items-center justify-center shrink-0 mt-space-xxs">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-space-xs py-space-xxs rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase font-bold">
+                  Curriculum Notice
+                </span>
+<span class="font-code-tabular text-code-tabular text-outline">BLOOM-EVAL</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-sm">equalizer</span> Section 3.2: Learning Objectives
+                </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Bloom's Level Distribution Alert</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Level 1 (Remember) outcomes are completely absent; course strongly skews towards L4 (Analyze), L5 (Evaluate), and L6 (Create). While appropriate for a Semester VII advanced engineering elective, ensure introductory modules contain recall prerequisites.
+              </p>
+<!-- Bloom distribution visualizer -->
+<div class="mt-space-sm flex flex-col gap-space-xxs max-w-md">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>L1-L2 Foundation: 10%</span>
+<span>L3 Application: 25%</span>
+<span class="text-secondary font-bold">L4-L6 Advanced: 65%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high flex overflow-hidden">
+<div class="h-full bg-outline-variant" style="width: 10%"></div>
+<div class="h-full bg-surface-tint" style="width: 25%"></div>
+<div class="h-full bg-secondary" style="width: 65%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex lg:flex-col items-center lg:items-end gap-space-sm shrink-0 pl-space-xs lg:pl-0">
+<button class="w-full sm:w-auto px-space-md py-space-sm rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-all flex items-center justify-center gap-space-xs shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+<span>Review Outcomes</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Sticky Bottom Global Action Pipeline Bar -->
+<section class="sticky bottom-4 z-30 mt-space-md">
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-full bg-error-container text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div class="flex flex-col">
+<div class="font-label-lg text-label-lg text-primary flex items-center gap-space-xs">
+<span>Workflow Locked</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-code-tabular text-error text-body-sm">1 critical issue remaining</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Resolve the contact hours discrepancy to unlock submission to the Department Chair.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-md py-space-sm rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-all" type="button">
+          Save Draft Checks
+        </button>
+<button class="px-space-lg py-space-sm rounded bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-lg text-label-lg shadow-sm flex items-center gap-space-xs transition-all opacity-90 cursor-pointer" id="btn-proceed" type="button">
+<span>Proceed to Workflow Stages</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple interactive filter tabs
+  const tabs = document.querySelectorAll('.filter-tab');
+  const issues = document.querySelectorAll('.issue-card');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Toggle active visual states
+      tabs.forEach(t => {
+        t.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        t.classList.add('text-on-surface-variant');
+      });
+      tab.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      tab.classList.remove('text-on-surface-variant');
+
+      const filter = tab.getAttribute('data-filter');
+      issues.forEach(issue => {
+        if (filter === 'all' || issue.getAttribute('data-category') === filter) {
+          issue.style.display = 'block';
+        } else {
+          issue.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Re-run Audit button visual feedback
+  const rerunBtn = document.getElementById('btn-rerun-audit');
+  const reloadIcon = document.getElementById('reload-icon');
+
+  if (rerunBtn && reloadIcon) {
+    rerunBtn.addEventListener('click', () => {
+      reloadIcon.classList.add('animate-spin');
+      rerunBtn.disabled = true;
+      setTimeout(() => {
+        reloadIcon.classList.remove('animate-spin');
+        rerunBtn.disabled = false;
+      }, 900);
+    });
+  }
+</script></div></main></div></body></html>

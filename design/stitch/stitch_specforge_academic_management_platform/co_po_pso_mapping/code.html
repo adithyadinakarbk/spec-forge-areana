@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary":"#006b5d","surface-variant":"#d9e3f6","on-primary-fixed-variant":"#2d486d","on-secondary":"#ffffff","surface":"#f8f9ff","outline":"#74777f","on-error":"#ffffff","inverse-primary":"#adc8f5","primary-fixed-dim":"#adc8f5","tertiary-container":"#2a3a4f","surface-tint":"#455f87","on-background":"#121c2a","on-primary-fixed":"#001c3b","primary-container":"#1e3a5f","tertiary":"#142538","surface-container-low":"#eff4ff","on-tertiary":"#ffffff","on-secondary-container":"#006f61","surface-container-high":"#dee9fc","outline-variant":"#c4c6cf","background":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-secondary-fixed-variant":"#005046","on-secondary-fixed":"#00201b","tertiary-fixed-dim":"#b7c8e1","on-surface":"#121c2a","surface-container-lowest":"#ffffff","surface-container-highest":"#d9e3f6","surface-dim":"#d0dbed","on-error-container":"#93000a","on-surface-variant":"#43474e","tertiary-fixed":"#d3e4fe","on-tertiary-fixed-variant":"#38485d","primary":"#022448","surface-container":"#e6eeff","on-tertiary-fixed":"#0b1c30","surface-bright":"#f8f9ff","primary-fixed":"#d5e3ff","error-container":"#ffdad6","secondary-fixed":"#83f6e0","on-primary":"#ffffff","secondary-fixed-dim":"#65dac4","error":"#ba1a1a","inverse-surface":"#27313f","secondary-container":"#80f3dd","on-primary-container":"#8aa4cf","on-tertiary-container":"#94a4bd"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-lg":"1.25rem","space-md":"0.875rem","space-sm":"0.5rem","space-2xl":"3rem","gutter":"1.5rem","space-xs":"0.25rem","space-xxs":"0.125rem","gutter-dense":"0.75rem","space-xl":"2rem","margin":"2rem","margin-compact":"1.25rem"},"fontFamily":{"headline-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"label-sm":["Inter"],"code-tabular":["Inter"],"label-lg":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-lg":["Plus Jakarta Sans"]},"fontSize":{"headline-xl":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.04em","fontWeight":"700"}],"code-tabular":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.01em","fontWeight":"500"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.005em","fontWeight":"400"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full h-16 bg-primary-container text-on-primary z-50 shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-sm"><img alt="SpecForge Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X2uj-S25Soos9sGxO4L87AKRE1gu3WcTlYgsIdJ3h4jLbMd_as2c7fZnw67T3zVUy4CgTdYVVZYlYxUgyF9LhoWFdwNSzdAJqn4j4TuWISuo5HqtEHyswv8L_0Mw9uK4j0SRd3CESED_pVK3dvOff-oPq7p0IItsYEmoh8gbH9naUVu4ynddVFlx8wyN2Ihz-qFlRAvAxVnLbAkVh1Ej_T4FwzqTOt2MshHbapGESX0A"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-primary">SpecForge</span></div><div class="h-6 w-px bg-outline-variant/30"></div><div class="flex items-center bg-tertiary-container/80 p-space-xxs rounded-lg border border-outline-variant/20"><button class="px-space-sm py-space-xxs rounded bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-space-xs" type="button"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>Author</button><button class="px-space-sm py-space-xxs rounded text-on-tertiary-container hover:text-on-secondary transition-colors font-label-md text-label-md" type="button">Reviewer</button><button class="px-space-sm py-space-xxs rounded text-on-tertiary-container hover:text-on-secondary transition-colors font-label-md text-label-md" type="button">HOD</button></div></div><div class="hidden xl:flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-tertiary-container/60 px-space-md py-space-xs rounded border border-outline-variant/20"><span class="font-code-tabular text-code-tabular text-on-primary-fixed">CS402: Distributed Systems (v2.3)</span><span class="px-space-xs py-space-xxs rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase">Under Review</span></div><div class="flex items-center gap-space-xs text-on-primary-container font-label-md text-label-md"><span class="material-symbols-outlined text-base">cloud_done</span><span>Auto-saved 2m ago</span></div></div><div class="flex items-center gap-space-md shrink-0"><button class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs rounded text-on-primary-container hover:text-on-primary hover:bg-tertiary-container/40 transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-lg">help_outline</span><span>Guidelines</span></button><button class="relative p-space-xs rounded text-on-primary-container hover:text-on-primary hover:bg-tertiary-container/40 transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-label-sm">3</span></button><div class="h-6 w-px bg-outline-variant/30"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right hidden lg:block"><div class="font-label-md text-label-md text-on-primary leading-tight">Dr. Aris Vance</div><div class="font-label-sm text-label-sm text-on-primary-container leading-tight">Assoc. Prof (CSE)</div></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVXZO1aJMm5THxjZ6rMyBYh_O6KmM5CGybQCgao9YjaoqufiYB2ZaAxWkjkjoOC5Z6nHKpKmtTctVMbOhySD4lFw3qAOtEL-eF2IAt76UKbDOuzeV3dTJwev48n38nUSNhL2hPDUKi82U6x32aIgQh0BJYYfM2OYZTUvSNB-2LJltP8LyTA-Y3tu52tFi5MnDcdkLb59r9L9kG4nInNT8eORP2-m6ODYFziFxXc0hc"/></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant/40 z-40 flex flex-col justify-between overflow-y-auto"><div class="p-space-md"><div class="px-space-sm py-space-xs mb-space-sm font-label-sm text-label-sm uppercase tracking-wider text-outline">Specification Pipeline</div><nav class="flex flex-col gap-space-xxs" data-active-classes="bg-secondary-container/30 text-secondary border-l-4 border-secondary font-label-lg"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors border-l-4 border-transparent font-label-md text-label-md" data-path="upload" href="#"><span class="material-symbols-outlined text-lg">cloud_upload</span><span>1. Upload</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors border-l-4 border-transparent font-label-md text-label-md" data-path="course-specification" href="#"><span class="material-symbols-outlined text-lg">description</span><span>2. Spec</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-colors bg-secondary-container/30 text-secondary border-l-4 border-secondary font-label-lg" data-path="curriculum-matrix" href="#"><span class="material-symbols-outlined text-lg">grid_view</span><span>3. CO–PO–PSO Map</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors border-l-4 border-transparent font-label-md text-label-md" data-path="validation-and-compliance" href="#"><span class="material-symbols-outlined text-lg">check_circle</span><span>4. Checks</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors border-l-4 border-transparent font-label-md text-label-md" data-path="approval-stages" href="#"><span class="material-symbols-outlined text-lg">alt_route</span><span>5. Workflow</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors border-l-4 border-transparent font-label-md text-label-md" data-path="publish-and-download" href="#"><span class="material-symbols-outlined text-lg">download</span><span>6. Export</span></a></nav></div><div class="p-space-md border-t border-outline-variant/40 bg-surface-container-low"><div class="flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-base">verified</span><div class="font-label-sm text-label-sm text-on-surface">NBA &amp; ABET Compliant</div></div><span class="px-space-xxs py-space-xxs rounded bg-surface-container-highest text-on-surface-variant font-code-tabular text-label-sm">24-25</span></div></div></aside><div class="pl-64"><main class="min-h-screen pt-16 bg-surface-container-low"><div class="max-w-[1366px] mx-auto p-gutter"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Context Header & Breadcrumbs -->
+<div class="flex flex-col gap-space-sm bg-surface-container-lowest p-space-xl rounded-xl shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span>Curriculum</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="font-code-tabular text-code-tabular text-primary">CS402</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-secondary font-label-lg text-label-lg">Outcome Mapping</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xxs rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wide flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          NBA Tier-1 Standard
+        </span>
+<span class="px-space-sm py-space-xxs rounded-full bg-surface-container-high text-on-surface-variant font-code-tabular text-label-sm">
+          Rev. 2024-Q3
+        </span>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mt-space-xs">
+<div class="max-w-4xl">
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Curriculum Correlation Matrix (CO–PO–PSO)</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Map course outcomes against Program Outcomes (PO1–PO12) and Program Specific Outcomes (PSO1–PSO3). 
+          Mapping scale: <strong class="text-primary font-label-md">3 = Substantial (High)</strong>, <strong class="text-primary font-label-md">2 = Moderate (Medium)</strong>, <strong class="text-primary font-label-md">1 = Slight (Low)</strong>, <strong class="text-outline font-label-md">- = No correlation</strong>.
+        </p>
+</div>
+<!-- Quick Action Badges -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-secondary text-on-secondary hover:bg-secondary/90 transition shadow-sm font-label-lg text-label-lg" id="batch-map-btn" type="button">
+<span class="material-symbols-outlined text-base">auto_fix_high</span>
+<span>Auto-Map via Bloom's</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition font-label-lg text-label-lg" id="export-excel-btn" type="button">
+<span class="material-symbols-outlined text-base">table_view</span>
+<span>Export Excel</span>
+</button>
+</div>
+</div>
+<!-- Summary Metrics Pill Row -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-md mt-space-sm">
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xxs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Target Attainment</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-primary font-bold">2.38</span>
+<span class="font-label-md text-label-md text-outline">/ 3.00</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-secondary h-full rounded-full" style="width: 79.3%;"></div>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xxs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">PO Vector Coverage</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-primary font-bold">11</span>
+<span class="font-label-md text-label-md text-outline">/ 12 POs mapped</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-primary h-full rounded-full" style="width: 91.6%;"></div>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xxs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">High Impact Cells (L3)</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-primary font-bold">18</span>
+<span class="font-label-md text-label-md text-secondary">(42.8% volume)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-secondary h-full rounded-full" style="width: 42.8%;"></div>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Accreditation Audit</span>
+<span class="material-symbols-outlined text-secondary text-base">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-label-lg text-label-lg mt-space-xxs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Compliant (NBA Criteria 3.1)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Validated against SAR 2024</span>
+</div>
+</div>
+</div>
+<!-- Interactive Controls Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md bg-surface-container-lowest px-space-xl py-space-md rounded-xl shadow-sm">
+<div class="flex flex-wrap items-center gap-space-md">
+<!-- Filter Dropdown -->
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-outline text-base">filter_list</span>
+<span class="font-label-sm text-label-sm text-outline uppercase">Filter:</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer" id="outcome-filter">
+<option value="all">All Outcomes (CO1 - CO5)</option>
+<option value="CO1">CO1: Foundation Concepts</option>
+<option value="CO2">CO2: Consensus Algorithms</option>
+<option value="CO3">CO3: Consistency &amp; Replication</option>
+<option value="CO4">CO4: Fault Tolerance</option>
+<option value="CO5">CO5: Enterprise Cloud Arch</option>
+</select>
+</div>
+<!-- View Style Switcher -->
+<div class="flex items-center gap-space-xxs bg-surface-container-low p-space-xxs rounded-lg">
+<button class="px-space-md py-space-xs rounded-lg font-label-sm text-label-sm bg-surface-container-lowest text-primary shadow-sm transition" id="view-mode-standard" type="button">
+          Standard (Numeric)
+        </button>
+<button class="px-space-md py-space-xs rounded-lg font-label-sm text-label-sm text-outline hover:text-primary transition" id="view-mode-intensity" type="button">
+          Color Intensity
+        </button>
+<button class="px-space-md py-space-xs rounded-lg font-label-sm text-label-sm text-outline hover:text-primary transition" id="view-mode-heatmap" type="button">
+          Heatmap
+        </button>
+</div>
+</div>
+<!-- Quick Utilities -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<span class="inline-block w-2.5 h-2.5 rounded bg-secondary"></span> Level 3
+        <span class="inline-block w-2.5 h-2.5 rounded bg-surface-tint ml-space-xs"></span> Level 2
+        <span class="inline-block w-2.5 h-2.5 rounded bg-surface-variant ml-space-xs"></span> Level 1
+        <span class="inline-block w-2.5 h-2.5 rounded bg-surface-container-highest ml-space-xs"></span> N/A
+      </div>
+<button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg hover:bg-surface-container-low text-primary transition font-label-md text-label-md" id="recalc-btn" type="button">
+<span class="material-symbols-outlined text-base">refresh</span>
+<span>Recalculate Averages</span>
+</button>
+</div>
+</div>
+<!-- Matrix Visualization Sheet -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full border-collapse text-left min-w-[1100px]">
+<thead>
+<tr class="bg-surface-container-low border-b-0">
+<th class="sticky left-0 z-20 bg-surface-container-low py-space-md px-space-lg w-72 min-w-[280px]">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Course Outcome</span>
+<span class="font-headline-sm text-headline-sm text-primary">Syllabus Competency</span>
+</div>
+</th>
+<!-- PO Columns -->
+<th class="py-space-md px-space-xs text-center w-12" title="Engineering Knowledge">
+<span class="font-label-md text-label-md text-primary block">PO1</span>
+<span class="font-label-sm text-label-sm text-outline block font-normal">Eng.K</span>
+</th>
+<th class="py-space-md px-space-xs text-center w-12" title="Problem Analysis">
+<span class="font-label-md text-label-md text-primary block">PO2</span>
+<span class="font-label-sm text-label-sm text-outline block font-normal">Prob.A</span>
+</th>
+<th class="py-space-md px-space-xs text-center w-12" title="Design/Development of Solutions">
+<span class="font-label-md text-label-md text-primary block">PO3</span>
+<span class="font-label-sm text-label-sm text-outline block font-normal">Design</span>
+</th>
+<th class="py-space-md px-space-xs text-center w-12" title="Investigations of Complex Problems">
+<span class="font-label-md text-label-md text-primary block">PO4</span>
+<span class="font-label-sm text-label-sm text-outline block font-normal">Invest</span>
+</th>
+<th class="py-space-md px-space-xs text-center w-12" title="Modern Tool Usage">
+<span class="font-label-md text-label-md text-primary block">PO5</span>
+<span class="font-label-sm text-label-sm text-outline block font-normal">Tools</span>
+</th>
+<th class="py-space-md px-space-xs text-center w-12" title="The Engineer and Society">
+<span class="font-label-md text-label-md text-primary block">PO6</span>
+<span class="font-label-sm text-label-sm text-outline block font-normal">Societ</span>
+</th>
+<th class="py-space-md px-space-xs text-center w-12" title="Environment &amp; Sustainability">
+<span class="font-label-md text-label-md text-primary block">PO7</span>
+<span class="font-label-sm text-label-sm text-outline block font-normal">Envir</span>
+</th>
+<th class="py-space-md px-space-xs text-center w-12" title="Ethics">
+<span class="font-label-md text-label-md text-primary block">PO8</span>
+<span class="font-label-sm text-label-sm text-outline block font-normal">Ethics</span>
+</th>
+<th class="py-space-md px-space-xs text-center w-12" title="Individual &amp; Teamwork">
+<span class="font-label-md text-label-md text-primary block">PO9</span>
+<span class="font-label-sm text-label-sm text-outline block font-normal">Team</span>
+</th>
+<th class="py-space-md px-space-xs text-center w-12" title="Communication">
+<span class="font-label-md text-label-md text-primary block">PO10</span>
+<span class="font-label-sm text-label-sm text-outline block font-normal">Comm</span>
+</th>
+<th class="py-space-md px-space-xs text-center w-12" title="Project Management &amp; Finance">
+<span class="font-label-md text-label-md text-primary block">PO11</span>
+<span class="font-label-sm text-label-sm text-outline block font-normal">Mgmt</span>
+</th>
+<th class="py-space-md px-space-xs text-center w-12" title="Life-long Learning">
+<span class="font-label-md text-label-md text-primary block">PO12</span>
+<span class="font-label-sm text-label-sm text-outline block font-normal">Learn</span>
+</th>
+<!-- Separator Gap for PSO -->
+<th class="py-space-md px-space-xs text-center w-14 bg-surface-container-high" title="Program Specific Outcome 1: Cloud &amp; Cluster Systems">
+<span class="font-label-md text-label-md text-secondary block font-bold">PSO1</span>
+<span class="font-label-sm text-label-sm text-secondary block font-normal">Cloud</span>
+</th>
+<th class="py-space-md px-space-xs text-center w-14 bg-surface-container-high" title="Program Specific Outcome 2: Distributed Security &amp; Trust">
+<span class="font-label-md text-label-md text-secondary block font-bold">PSO2</span>
+<span class="font-label-sm text-label-sm text-secondary block font-normal">Secur</span>
+</th>
+<th class="py-space-md px-space-xs text-center w-14 bg-surface-container-high" title="Program Specific Outcome 3: High-throughput Data Engineering">
+<span class="font-label-md text-label-md text-secondary block font-bold">PSO3</span>
+<span class="font-label-sm text-label-sm text-secondary block font-normal">Data</span>
+</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="matrix-tbody">
+<!-- CO1 ROW -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-co="CO1">
+<td class="sticky left-0 z-10 bg-surface-container-lowest group-hover:bg-surface-container-low transition-colors py-space-sm px-space-lg">
+<div class="flex items-start gap-space-sm">
+<span class="px-space-xs py-space-xxs rounded bg-primary-container text-on-primary font-code-tabular text-label-sm font-bold">CO1</span>
+<div>
+<div class="font-label-lg text-label-lg text-primary">Fundamental Foundations</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Formulate models of concurrency, clock synchronization, and logical states.</p>
+</div>
+</div>
+</td>
+<!-- PO1..12 + PSO1..3 -->
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO1" data-target="PO1" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO1" data-target="PO2" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO1" data-target="PO3" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO1" data-target="PO4" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-variant text-on-primary-fixed-variant" data-co="CO1" data-target="PO5" data-val="1" type="button">1</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO1" data-target="PO6" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO1" data-target="PO7" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO1" data-target="PO8" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-variant text-on-primary-fixed-variant" data-co="CO1" data-target="PO9" data-val="1" type="button">1</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO1" data-target="PO10" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO1" data-target="PO11" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO1" data-target="PO12" data-val="2" type="button">2</button></td>
+<!-- PSO Cells -->
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO1" data-target="PSO1" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO1" data-target="PSO2" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-variant text-on-primary-fixed-variant" data-co="CO1" data-target="PSO3" data-val="1" type="button">1</button></td>
+</tr>
+<!-- CO2 ROW (Selected Cell Showcase) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group bg-surface-container-low/30" data-co="CO2">
+<td class="sticky left-0 z-10 bg-surface-container-lowest group-hover:bg-surface-container-low transition-colors py-space-sm px-space-lg">
+<div class="flex items-start gap-space-sm">
+<span class="px-space-xs py-space-xxs rounded bg-primary-container text-on-primary font-code-tabular text-label-sm font-bold">CO2</span>
+<div>
+<div class="font-label-lg text-label-lg text-primary">Consensus &amp; Coordination</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Analyze Paxos, Raft, and Byzantine fault tolerant consensus algorithms.</p>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO2" data-target="PO1" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center">
+<!-- Active Highlighted Cell -->
+<button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-md scale-105" data-co="CO2" data-target="PO2" data-val="3" id="active-cell-co2-po2" type="button">3</button>
+</td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO2" data-target="PO3" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO2" data-target="PO4" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO2" data-target="PO5" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO2" data-target="PO6" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO2" data-target="PO7" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-variant text-on-primary-fixed-variant" data-co="CO2" data-target="PO8" data-val="1" type="button">1</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO2" data-target="PO9" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-variant text-on-primary-fixed-variant" data-co="CO2" data-target="PO10" data-val="1" type="button">1</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO2" data-target="PO11" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO2" data-target="PO12" data-val="3" type="button">3</button></td>
+<!-- PSO Cells -->
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO2" data-target="PSO1" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO2" data-target="PSO2" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO2" data-target="PSO3" data-val="2" type="button">2</button></td>
+</tr>
+<!-- CO3 ROW -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-co="CO3">
+<td class="sticky left-0 z-10 bg-surface-container-lowest group-hover:bg-surface-container-low transition-colors py-space-sm px-space-lg">
+<div class="flex items-start gap-space-sm">
+<span class="px-space-xs py-space-xxs rounded bg-primary-container text-on-primary font-code-tabular text-label-sm font-bold">CO3</span>
+<div>
+<div class="font-label-lg text-label-lg text-primary">Consistency &amp; Replication</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Evaluate linearizability, eventual consistency, and quorum protocols.</p>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO3" data-target="PO1" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO3" data-target="PO2" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO3" data-target="PO3" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO3" data-target="PO4" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO3" data-target="PO5" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO3" data-target="PO6" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO3" data-target="PO7" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO3" data-target="PO8" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-variant text-on-primary-fixed-variant" data-co="CO3" data-target="PO9" data-val="1" type="button">1</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO3" data-target="PO10" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-variant text-on-primary-fixed-variant" data-co="CO3" data-target="PO11" data-val="1" type="button">1</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO3" data-target="PO12" data-val="2" type="button">2</button></td>
+<!-- PSO Cells -->
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO3" data-target="PSO1" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO3" data-target="PSO2" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO3" data-target="PSO3" data-val="3" type="button">3</button></td>
+</tr>
+<!-- CO4 ROW -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-co="CO4">
+<td class="sticky left-0 z-10 bg-surface-container-lowest group-hover:bg-surface-container-low transition-colors py-space-sm px-space-lg">
+<div class="flex items-start gap-space-sm">
+<span class="px-space-xs py-space-xxs rounded bg-primary-container text-on-primary font-code-tabular text-label-sm font-bold">CO4</span>
+<div>
+<div class="font-label-lg text-label-lg text-primary">Fault Tolerance &amp; Recovery</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Design failover architectures, heartbeats, and checkpoint recovery schemes.</p>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO4" data-target="PO1" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO4" data-target="PO2" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO4" data-target="PO3" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO4" data-target="PO4" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO4" data-target="PO5" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-variant text-on-primary-fixed-variant" data-co="CO4" data-target="PO6" data-val="1" type="button">1</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO4" data-target="PO7" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-variant text-on-primary-fixed-variant" data-co="CO4" data-target="PO8" data-val="1" type="button">1</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO4" data-target="PO9" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-variant text-on-primary-fixed-variant" data-co="CO4" data-target="PO10" data-val="1" type="button">1</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO4" data-target="PO11" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO4" data-target="PO12" data-val="2" type="button">2</button></td>
+<!-- PSO Cells -->
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO4" data-target="PSO1" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO4" data-target="PSO2" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO4" data-target="PSO3" data-val="2" type="button">2</button></td>
+</tr>
+<!-- CO5 ROW -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group" data-co="CO5">
+<td class="sticky left-0 z-10 bg-surface-container-lowest group-hover:bg-surface-container-low transition-colors py-space-sm px-space-lg">
+<div class="flex items-start gap-space-sm">
+<span class="px-space-xs py-space-xxs rounded bg-primary-container text-on-primary font-code-tabular text-label-sm font-bold">CO5</span>
+<div>
+<div class="font-label-lg text-label-lg text-primary">Enterprise Cloud Deployment</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Deploy production microservices on containerized mesh frameworks.</p>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO5" data-target="PO1" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO5" data-target="PO2" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO5" data-target="PO3" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO5" data-target="PO4" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO5" data-target="PO5" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-variant text-on-primary-fixed-variant" data-co="CO5" data-target="PO6" data-val="1" type="button">1</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-variant text-on-primary-fixed-variant" data-co="CO5" data-target="PO7" data-val="1" type="button">1</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular text-label-md bg-surface-container-highest text-outline" data-co="CO5" data-target="PO8" data-val="0" type="button">-</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO5" data-target="PO9" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO5" data-target="PO10" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO5" data-target="PO11" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO5" data-target="PO12" data-val="3" type="button">3</button></td>
+<!-- PSO Cells -->
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO5" data-target="PSO1" data-val="3" type="button">3</button></td>
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-surface-tint text-on-primary shadow-sm" data-co="CO5" data-target="PSO2" data-val="2" type="button">2</button></td>
+<td class="p-space-xxs text-center bg-surface-container-high/40"><button class="matrix-cell w-9 h-9 rounded-lg font-code-tabular font-bold text-label-lg bg-secondary text-on-secondary shadow-sm" data-co="CO5" data-target="PSO3" data-val="3" type="button">3</button></td>
+</tr>
+</tbody>
+<!-- Bottom Summary Row with Mini Bar Sparklines -->
+<tfoot>
+<tr class="bg-surface-container-low font-bold">
+<td class="sticky left-0 z-20 bg-surface-container-low py-space-md px-space-lg">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary">Weighted Course Average</span>
+<span class="font-label-sm text-label-sm text-outline">Direct Program Vector</span>
+</div>
+</td>
+<!-- PO Averages & Sparklines -->
+<td class="p-space-xxs text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-primary" id="avg-PO1">2.60</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-secondary rounded-t" style="height: 86%;"></div>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-primary" id="avg-PO2">2.80</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-secondary rounded-t" style="height: 93%;"></div>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-primary" id="avg-PO3">2.80</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-secondary rounded-t" style="height: 93%;"></div>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-primary" id="avg-PO4">2.25</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-surface-tint rounded-t" style="height: 75%;"></div>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-primary" id="avg-PO5">2.20</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-surface-tint rounded-t" style="height: 73%;"></div>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-primary" id="avg-PO6">1.00</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-surface-variant rounded-t" style="height: 33%;"></div>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-primary" id="avg-PO7">1.00</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-surface-variant rounded-t" style="height: 33%;"></div>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-primary" id="avg-PO8">1.00</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-surface-variant rounded-t" style="height: 33%;"></div>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-primary" id="avg-PO9">1.80</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-surface-tint rounded-t" style="height: 60%;"></div>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-primary" id="avg-PO10">1.33</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-surface-variant rounded-t" style="height: 44%;"></div>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-primary" id="avg-PO11">2.00</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-surface-tint rounded-t" style="height: 66%;"></div>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-primary" id="avg-PO12">2.40</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-secondary rounded-t" style="height: 80%;"></div>
+</div>
+</div>
+</td>
+<!-- PSO Averages -->
+<td class="p-space-xxs text-center bg-surface-container-high/40">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-secondary" id="avg-PSO1">3.00</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-secondary rounded-t" style="height: 100%;"></div>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center bg-surface-container-high/40">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-secondary" id="avg-PSO2">2.40</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-secondary rounded-t" style="height: 80%;"></div>
+</div>
+</div>
+</td>
+<td class="p-space-xxs text-center bg-surface-container-high/40">
+<div class="flex flex-col items-center gap-1">
+<span class="font-code-tabular text-label-md text-secondary" id="avg-PSO3">2.20</span>
+<div class="w-6 h-12 bg-surface-container-highest rounded-t flex items-end overflow-hidden p-0.5">
+<div class="w-full bg-secondary rounded-t" style="height: 73%;"></div>
+</div>
+</div>
+</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<!-- Editorial Section: Articulation Justification & Evidence Studio -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Justification Editor (Main) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-6 bg-secondary rounded-full"></span>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Selected Mapping Node</span>
+<h2 class="font-headline-sm text-headline-sm text-primary" id="justification-heading">Articulation Justification for Cell [CO2 → PO2 (Level 3)]</h2>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-space-xxs rounded bg-secondary text-on-secondary font-code-tabular text-label-sm font-bold">Substantial (High)</span>
+<span class="px-space-sm py-space-xxs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Bloom Level: C4 (Analyzing)</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="justification-text">
+<span>Accreditation Rationale &amp; Evaluation Mechanism (NBA Criteria 3.1.2)</span>
+<span class="text-outline font-body-sm text-body-sm">482 characters</span>
+</label>
+<textarea class="w-full bg-surface p-space-md rounded-lg font-body-md text-body-md text-on-surface resize-none focus:outline-none focus:bg-surface-container-lowest transition shadow-inner" id="justification-text" rows="4">Students rigorously analyze distributed race conditions, split-brain syndromes, and network partition scenarios using TLA+ model checking and formal specification in Lab Exercise 4. Mathematical induction proofs are required during Mid-Term Assessment 2 to substantiate linearizability and Paxos quorum consensus under uncoordinated network drops.</textarea>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-base">task_alt</span>
+<span>Rubric Anchor: Lab 4 &amp; MT-2</span>
+</div>
+<div class="flex items-center gap-space-xs text-outline font-label-md text-label-md">
+<span class="material-symbols-outlined text-base">history</span>
+<span>Edited 14m ago by Dr. A. Vance</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded-lg hover:bg-surface-container text-outline hover:text-primary transition font-label-md text-label-md" id="discard-justification" type="button">
+            Revert Changes
+          </button>
+<button class="px-space-lg py-space-sm rounded-lg bg-primary text-on-primary hover:bg-primary/90 transition shadow-sm font-label-lg text-label-lg flex items-center gap-space-xs" id="save-justification" type="button">
+<span class="material-symbols-outlined text-base">save</span>
+<span>Save &amp; Update Matrix</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Side Inspection Rail (Accreditation Radar & Evidence) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Evidence Artifact Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">folder_open</span>
+            Assessment Evidence
+          </span>
+<span class="px-space-xs py-space-xxs rounded bg-secondary-container/40 text-on-secondary-container font-code-tabular text-label-sm">2 Linked</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between hover:bg-surface-container transition cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-base">description</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary leading-tight">Lab4_TLA_Plus_Spec.pdf</span>
+<span class="font-label-sm text-label-sm text-outline">Rubric Grade: C4 Analytics (15%)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-base">open_in_new</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between hover:bg-surface-container transition cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-base">quiz</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary leading-tight">MT2_Paxos_Proof_Question.pdf</span>
+<span class="font-label-sm text-label-sm text-outline">Exam Weightage: 8 Marks</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-base">open_in_new</span>
+</div>
+</div>
+<button class="w-full py-space-xs rounded-lg bg-surface-container-high/60 hover:bg-surface-container-high text-primary font-label-md text-label-md flex items-center justify-center gap-space-xs transition" type="button">
+<span class="material-symbols-outlined text-base">add_link</span>
+<span>Attach Coursework Rubric</span>
+</button>
+</div>
+<!-- Quick Accreditation Distribution Visual -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<span class="font-label-lg text-label-lg text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">insights</span>
+          Correlation Strength Density
+        </span>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline mt-space-xs">
+<span>Substantial (3)</span>
+<span class="font-bold text-primary">18 cells (42%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 42%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline mt-space-xs">
+<span>Moderate (2)</span>
+<span class="font-bold text-primary">15 cells (35%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-surface-tint h-full rounded-full" style="width: 35%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline mt-space-xs">
+<span>Slight (1)</span>
+<span class="font-bold text-primary">9 cells (21%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-surface-variant h-full rounded-full" style="width: 21%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initMatrixInteractivity() {
+    const cells = document.querySelectorAll('.matrix-cell');
+    const heading = document.getElementById('justification-heading');
+    const textarea = document.getElementById('justification-text');
+    const outcomeFilter = document.getElementById('outcome-filter');
+    const saveBtn = document.getElementById('save-justification');
+    const recalcBtn = document.getElementById('recalc-btn');
+    const batchBtn = document.getElementById('batch-map-btn');
+    const viewModes = {
+      standard: document.getElementById('view-mode-standard'),
+      intensity: document.getElementById('view-mode-intensity'),
+      heatmap: document.getElementById('view-mode-heatmap'),
+    };
+
+    let activeCell = document.getElementById('active-cell-co2-po2');
+
+    // Preset justifications dictionary for realistic UX feedback
+    const justificationLibrary = {
+      'CO1-PO1': 'Formal models of clock drift, Lamport timestamps, and vector causality map directly onto core engineering foundational principles.',
+      'CO1-PO2': 'Students rigorously model concurrency limits using state machines and identify deadlocks through mathematical abstractions.',
+      'CO2-PO2': 'Students rigorously analyze distributed race conditions and network partition scenarios using TLA+ model checking and formal specification in Lab Exercise 4.',
+      'CO2-PO3': 'Design of distributed consensus engines adhering to Paxos / Raft election specifications with custom heartbeat timeouts.',
+      'CO3-PO1': 'Evaluating CAP theorem trade-offs and weak isolation guarantees using formal serializability verification methods.',
+      'CO4-PO5': 'Configuring Chaos Mesh and automated network fault simulators to trigger partition splits in production clusters.',
+      'CO5-PO11': 'Orchestrating microservice failovers in Kubernetes pods subject to strict SLA and cloud computing budget constraints.'
+    };
+
+    // Cycle through values 0 -> 1 -> 2 -> 3 -> 0 on click
+    cells.forEach(cell => {
+      cell.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Remove previous active outline
+        if (activeCell) {
+          activeCell.classList.remove('scale-105', 'shadow-md');
+        }
+        
+        activeCell = this;
+        this.classList.add('scale-105', 'shadow-md');
+
+        const co = this.dataset.co;
+        const target = this.dataset.target;
+        let val = parseInt(this.dataset.val, 10);
+
+        // Cycle through next value
+        val = (val + 1) % 4;
+        this.dataset.val = val;
+
+        // Apply appearance based on value
+        applyCellStyles(this, val);
+
+        // Update Justification card
+        const key = `${co}-${target}`;
+        heading.innerHTML = `Articulation Justification for Cell [${co} &rarr; ${target} (Level ${val > 0 ? val : 'None'})]`;
+        
+        if (justificationLibrary[key]) {
+          textarea.value = justificationLibrary[key];
+        } else if (val > 0) {
+          textarea.value = `Assessment rubrics and syllabus modules under ${co} contribute directly to the attainment targets of ${target} at correlation index ${val}.`;
+        } else {
+          textarea.value = `No direct correlation established between ${co} and ${target} in current semester curriculum review.`;
+        }
+      });
+    });
+
+    function applyCellStyles(element, val) {
+      element.classList.remove(
+        'bg-secondary', 'text-on-secondary',
+        'bg-surface-tint', 'text-on-primary',
+        'bg-surface-variant', 'text-on-primary-fixed-variant',
+        'bg-surface-container-highest', 'text-outline'
+      );
+
+      if (val === 3) {
+        element.textContent = '3';
+        element.classList.add('bg-secondary', 'text-on-secondary');
+      } else if (val === 2) {
+        element.textContent = '2';
+        element.classList.add('bg-surface-tint', 'text-on-primary');
+      } else if (val === 1) {
+        element.textContent = '1';
+        element.classList.add('bg-surface-variant', 'text-on-primary-fixed-variant');
+      } else {
+        element.textContent = '-';
+        element.classList.add('bg-surface-container-highest', 'text-outline');
+      }
+    }
+
+    // Filter CO rows
+    if (outcomeFilter) {
+      outcomeFilter.addEventListener('change', function() {
+        const filterVal = this.value;
+        const rows = document.querySelectorAll('#matrix-tbody tr');
+        rows.forEach(row => {
+          if (filterVal === 'all' || row.dataset.co === filterVal) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // View Style buttons toggle state
+    Object.keys(viewModes).forEach(mode => {
+      const btn = viewModes[mode];
+      if (!btn) return;
+      btn.addEventListener('click', () => {
+        Object.values(viewModes).forEach(b => {
+          b.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+          b.classList.add('text-outline');
+        });
+        btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        btn.classList.remove('text-outline');
+      });
+    });
+
+    // Save Justification Toast simulation
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        const originalText = saveBtn.innerHTML;
+        saveBtn.innerHTML = `<span class="material-symbols-outlined text-base">check</span><span>Saved to Spec</span>`;
+        saveBtn.classList.add('bg-secondary');
+        setTimeout(() => {
+          saveBtn.innerHTML = originalText;
+          saveBtn.classList.remove('bg-secondary');
+        }, 1600);
+      });
+    }
+
+    // Recalculate Averages Feedback
+    if (recalcBtn) {
+      recalcBtn.addEventListener('click', () => {
+        recalcBtn.classList.add('opacity-50', 'pointer-events-none');
+        setTimeout(() => {
+          recalcBtn.classList.remove('opacity-50', 'pointer-events-none');
+        }, 600);
+      });
+    }
+
+    // Batch Auto-Map animation trigger
+    if (batchBtn) {
+      batchBtn.addEventListener('click', () => {
+        batchBtn.innerHTML = `<span class="material-symbols-outlined text-base animate-spin">sync</span><span>Mapping...</span>`;
+        setTimeout(() => {
+          batchBtn.innerHTML = `<span class="material-symbols-outlined text-base">auto_fix_high</span><span>Auto-Map via Bloom's</span>`;
+        }, 900);
+      });
+    }
+  })();
+</script></div></main></div></body></html>

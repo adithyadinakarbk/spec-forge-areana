@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"error-container":"#ffdad6","inverse-surface":"#27313f","on-primary":"#ffffff","primary-fixed-dim":"#adc8f5","primary":"#022448","tertiary":"#142538","primary-container":"#1e3a5f","on-secondary-fixed":"#00201b","surface-container-low":"#eff4ff","on-tertiary-fixed-variant":"#38485d","surface-bright":"#f8f9ff","on-secondary-container":"#006f61","on-surface":"#121c2a","secondary-fixed":"#83f6e0","primary-fixed":"#d5e3ff","on-primary-container":"#8aa4cf","outline":"#74777f","tertiary-fixed-dim":"#b7c8e1","surface-tint":"#455f87","on-tertiary-container":"#94a4bd","secondary-container":"#80f3dd","surface-container-high":"#dee9fc","secondary":"#006b5d","surface-dim":"#d0dbed","on-surface-variant":"#43474e","on-primary-fixed":"#001c3b","inverse-primary":"#adc8f5","surface-container-lowest":"#ffffff","on-tertiary-fixed":"#0b1c30","tertiary-container":"#2a3a4f","tertiary-fixed":"#d3e4fe","on-tertiary":"#ffffff","on-secondary":"#ffffff","secondary-fixed-dim":"#65dac4","background":"#f8f9ff","outline-variant":"#c4c6cf","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-error-container":"#93000a","on-error":"#ffffff","on-primary-fixed-variant":"#2d486d","on-background":"#121c2a","error":"#ba1a1a","on-secondary-fixed-variant":"#005046","surface-container":"#e6eeff","surface-container-highest":"#d9e3f6","surface-variant":"#d9e3f6"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-compact":"1.25rem","margin":"2rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter-dense":"0.75rem","space-xxs":"0.125rem","space-md":"0.875rem","gutter":"1.5rem","space-lg":"1.25rem","space-2xl":"3rem","space-xl":"2rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-xl":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-sm":["Inter"],"code-tabular":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"label-lg":["Inter"],"headline-md":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"headline-xl":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.025em","fontWeight":"700"}],"body-sm":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.005em","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.04em","fontWeight":"700"}],"code-tabular":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.01em","fontWeight":"500"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"600"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md min-w-[280px]"><img alt="SpecForge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WO7xNFEgLtlIQVLIyMBGT4zEvZuX1qTtLWWoryLQBhtLOS9Bvh2-5I4byXR6Mb7dIjzntOE0QPqjz6NtKyzh7rl7KXsLa19MEBguHLdcpVGN0GQ9MkZh8LIeLcDfwvsnr7T0IdXFy8DSWlNtCw5zN_xz2klQDm1eMe_IRnzCknx_lIr2aONhYpyX1d3P0VkBo7dMS5kM1Jkhe8-9bIlMTu-MFxp8c4GL1sArh12RIhng"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">SpecForge</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-space-xxs">Academic Specification Workspace</span></div></div><div class="hidden xl:flex items-center gap-space-md px-space-md py-space-xs rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md text-on-surface-variant">Doc:</span><span class="font-label-lg text-label-lg text-primary">CS301: Data Structures &amp; Algorithms</span></div><div class="h-4 w-px bg-outline-variant"></div><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xxs rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>In Review</span></div><div class="h-4 w-px bg-outline-variant"></div><div class="inline-flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px] text-secondary">cloud_done</span><span>Saved just now</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center p-space-xxs bg-surface-container rounded-lg"><button class="px-space-sm py-space-xxs rounded-lg font-label-md text-label-md bg-primary-container text-on-primary font-bold shadow-none" type="button">Author</button><button class="px-space-sm py-space-xxs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">Reviewer</button><button class="px-space-sm py-space-xxs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">HOD</button></div><div class="relative flex items-center justify-center"><button aria-label="Notifications" class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-0 right-0 -mt-1 -mr-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-on-primary font-label-sm text-[10px]">3</span></div><div class="h-8 w-px bg-outline-variant hidden sm:block"></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex flex-col text-right"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Dr. Aris Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant">Assoc. Prof CSE</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest z-40 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 pt-space-lg px-space-md overflow-y-auto"><div class="px-space-sm mb-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Workflow Pipeline</span></div><nav class="flex flex-col gap-space-xxs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="upload" href="#"><span class="material-symbols-outlined text-[20px]">cloud_upload</span><span>1. Upload</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-bold rounded-lg" data-path="spec-editor" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span>2. Spec</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="co-po-pso-map" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>3. CO–PO–PSO Map</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="compliance-checks" href="#"><span class="material-symbols-outlined text-[20px]">check_circle</span><span>4. Checks</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="approval-workflow" href="#"><span class="material-symbols-outlined text-[20px]">account_tree</span><span>5. Workflow</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="export-publish" href="#"><span class="material-symbols-outlined text-[20px]">download</span><span>6. Export</span></a></nav></div><div class="p-space-md"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-primary font-bold leading-tight">NBA &amp; ABET Compliant</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-space-xxs">Cycle 2024-25</span></div></div></div></aside><div class="pl-64"><main class="relative w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification Placeholder -->
+<div class="fixed top-20 right-8 z-50 transform translate-y-[-100px] opacity-0 transition-all duration-300 pointer-events-none bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-sm font-body-sm text-body-sm" id="toast-banner">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">task_alt</span>
+<span id="toast-message">Specification draft saved successfully.</span>
+</div>
+<div class="px-margin py-space-lg flex flex-col gap-space-xl max-w-[1720px] mx-auto w-full">
+<!-- Top Meta & Breadcrumb & Action Header -->
+<div class="flex flex-col gap-space-sm">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Specifications</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-code-tabular text-code-tabular text-on-surface">CS301</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-label-md text-label-md text-primary font-bold">2. Course Specification</span>
+</nav>
+<!-- Main Section Header -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-col gap-space-xxs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Course Specification Editor</h1>
+<span class="px-space-sm py-space-xxs rounded bg-surface-container-high text-primary font-label-md text-label-md uppercase tracking-wider font-semibold">
+              CS301: Core Theory + Lab
+            </span>
+<span class="px-space-sm py-space-xxs rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+              Accreditation Cycle 2024–25
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+            Define comprehensive course identification, pedagogical objectives, Bloom’s cognitive outcomes, and modular syllabus aligned with national accreditation standards.
+          </p>
+</div>
+<!-- Action CTA Buttons -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center gap-space-xs transition-colors shadow-sm" onclick="showNotification('PDF Spec preview generated')" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Preview PDF</span>
+</button>
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center gap-space-xs transition-colors shadow-sm" onclick="showNotification('Draft autosaved to institutional cloud')" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Draft</span>
+</button>
+<a class="px-space-lg py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center gap-space-xs transition-all shadow-md" data-path="co-po-pso-map" href="#">
+<span>Next: Mapping Matrix</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 4 Pastel Summary Flashcards in a Single Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-gutter">
+<!-- Flashcard 1: Soft Blue -->
+<div class="p-space-lg rounded-xl bg-[#EAF2FF] flex flex-col justify-between shadow-sm relative overflow-hidden transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-[#274B7D] uppercase tracking-wider">Course Code</span>
+<span class="font-headline-xl text-headline-xl text-[#0B254A] mt-space-xxs">CS301</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-white/80 flex items-center justify-center text-[#1E3A5F] shadow-sm">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-[#38557A]">Dept: Computer Science &amp; Engg</span>
+<span class="font-code-tabular text-code-tabular text-[#274B7D] font-bold">UG-Core</span>
+</div>
+</div>
+<!-- Flashcard 2: Soft Purple -->
+<div class="p-space-lg rounded-xl bg-[#F1ECFF] flex flex-col justify-between shadow-sm relative overflow-hidden transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-[#4E3A82] uppercase tracking-wider">L-T-P: 3-0-2</span>
+<span class="font-headline-xl text-headline-xl text-[#2B1B54] mt-space-xxs">4.0 Credits</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-white/80 flex items-center justify-center text-[#4B3080] shadow-sm">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-[#5B468F]">42 Lec + 28 Lab Hrs</span>
+<span class="font-code-tabular text-code-tabular text-[#4E3A82] font-bold">70 Total Contact</span>
+</div>
+</div>
+<!-- Flashcard 3: Soft Teal -->
+<div class="p-space-lg rounded-xl bg-[#E6F7F5] flex flex-col justify-between shadow-sm relative overflow-hidden transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-[#006053] uppercase tracking-wider">Defined COs</span>
+<span class="font-headline-xl text-headline-xl text-[#003830] mt-space-xxs">5 Outcomes</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-white/80 flex items-center justify-center text-[#006B5D] shadow-sm">
+<span class="material-symbols-outlined text-[24px]">track_changes</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-[#196B60]">Bloom L2–L6 Mapped</span>
+<span class="font-code-tabular text-code-tabular text-[#006053] font-bold">100% Taxonomized</span>
+</div>
+</div>
+<!-- Flashcard 4: Soft Green -->
+<div class="p-space-lg rounded-xl bg-[#EAF8EF] flex flex-col justify-between shadow-sm relative overflow-hidden transition-transform hover:-translate-y-0.5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-[#1F6838] uppercase tracking-wider">Spec Completeness</span>
+<span class="font-headline-xl text-headline-xl text-[#0D3F1E] mt-space-xxs">88%</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-white/80 flex items-center justify-center text-[#1B6F38] shadow-sm">
+<span class="material-symbols-outlined text-[24px]">check_circle</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-[#276B3E]">8/9 Sections Validated</span>
+<span class="font-code-tabular text-code-tabular text-[#1F6838] font-bold">1 Action Left</span>
+</div>
+</div>
+</div>
+<!-- Main Workspace Grid: Editorial Form Area (Left) + Validation Rail (Right) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter items-start">
+<!-- Primary Editor Column (8 of 12 cols on desktop) -->
+<div class="xl:col-span-8 flex flex-col gap-space-xl">
+<!-- SECTION A: Course Basics & Credit Breakdown -->
+<section class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-lg bg-surface-container text-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold">A</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Course Basics &amp; Credit Breakdown</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Core statutory metadata required for cataloging and Board of Studies approval.</p>
+</div>
+</div>
+<span class="px-space-sm py-space-xxs rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase font-semibold">Section A — Complete</span>
+</div>
+<!-- Form Fields Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-dense">
+<!-- Code -->
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-md text-label-md text-on-surface">Course Code</label>
+<input class="px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-code-tabular text-code-tabular shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary" type="text" value="CS301"/>
+</div>
+<!-- Title -->
+<div class="flex flex-col gap-space-xxs md:col-span-2">
+<label class="font-label-md text-label-md text-on-surface">Course Title</label>
+<input class="px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary" type="text" value="Data Structures &amp; Algorithms"/>
+</div>
+<!-- Department -->
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-md text-label-md text-on-surface">Offering Department</label>
+<select class="px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary">
+<option selected="">Computer Science &amp; Engineering</option>
+<option>Information Technology</option>
+<option>Electronics &amp; Communication</option>
+</select>
+</div>
+<!-- Academic Year -->
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-md text-label-md text-on-surface">Academic Year</label>
+<input class="px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary" type="text" value="2024–2025"/>
+</div>
+<!-- Semester -->
+<div class="flex flex-col gap-space-xxs">
+<label class="font-label-md text-label-md text-on-surface">Target Semester</label>
+<select class="px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary">
+<option>Semester I</option>
+<option>Semester II</option>
+<option selected="">Semester III</option>
+<option>Semester IV</option>
+<option>Semester V</option>
+</select>
+</div>
+</div>
+<!-- Credit Breakdown Structure -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">Modular Credit Allocation Schema (L : T : P)</span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lecture (L)</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-headline-md text-headline-md text-primary">3</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">hrs / week</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-space-xxs font-semibold">42 Total Contact Hrs</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tutorial (T)</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-headline-md text-headline-md text-primary">0</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">hrs / week</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-space-xxs">0 Direct Hrs</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest flex flex-col shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Practical (P)</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-headline-md text-headline-md text-primary">2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">hrs / week</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-space-xxs font-semibold">28 Total Lab Hrs</span>
+</div>
+<div class="p-space-md rounded-lg bg-primary-container text-on-primary flex flex-col shadow-sm">
+<span class="font-label-sm text-label-sm text-on-primary-container">Earned Credit Units</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-headline-md text-headline-md text-on-primary">4.0</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Credits</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed mt-space-xxs font-bold">Standard AICTE Weight</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION B: Pedagogical Objectives -->
+<section class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-lg bg-surface-container text-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold">B</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Pedagogical Course Objectives</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">High-level institutional intent guiding instructional design across the semester.</p>
+</div>
+</div>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-space-xs transition-colors" onclick="addObjectiveItem()" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add Objective</span>
+</button>
+</div>
+<!-- Drag and Drop Objectives Container -->
+<div class="flex flex-col gap-space-sm" id="objectives-container">
+<!-- Objective Row 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center gap-space-md group">
+<div class="cursor-grab text-on-surface-variant hover:text-primary flex items-center">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-bold shrink-0 w-8">OBJ 1</span>
+<input class="flex-1 bg-surface-container-lowest px-space-md py-space-xs rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary" type="text" value="Impart foundational paradigms for abstract data types, complexity bounds, and operational invariants in memory."/>
+<button class="text-on-surface-variant hover:text-error p-space-xs rounded transition-colors opacity-70 group-hover:opacity-100" onclick="this.closest('.group').remove()" title="Delete objective" type="button">
+<span class="material-symbols-outlined text-[20px]">delete_outline</span>
+</button>
+</div>
+<!-- Objective Row 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center gap-space-md group">
+<div class="cursor-grab text-on-surface-variant hover:text-primary flex items-center">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-bold shrink-0 w-8">OBJ 2</span>
+<input class="flex-1 bg-surface-container-lowest px-space-md py-space-xs rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary" type="text" value="Develop rigorous analytical capabilities to compare asymptotic space-time trade-offs across recursive and iterative algorithms."/>
+<button class="text-on-surface-variant hover:text-error p-space-xs rounded transition-colors opacity-70 group-hover:opacity-100" onclick="this.closest('.group').remove()" title="Delete objective" type="button">
+<span class="material-symbols-outlined text-[20px]">delete_outline</span>
+</button>
+</div>
+<!-- Objective Row 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center gap-space-md group">
+<div class="cursor-grab text-on-surface-variant hover:text-primary flex items-center">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-bold shrink-0 w-8">OBJ 3</span>
+<input class="flex-1 bg-surface-container-lowest px-space-md py-space-xs rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary" type="text" value="Formulate real-world problem statements into appropriate tree structures, disjoint sets, and network graph topologies."/>
+<button class="text-on-surface-variant hover:text-error p-space-xs rounded transition-colors opacity-70 group-hover:opacity-100" onclick="this.closest('.group').remove()" title="Delete objective" type="button">
+<span class="material-symbols-outlined text-[20px]">delete_outline</span>
+</button>
+</div>
+<!-- Objective Row 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center gap-space-md group">
+<div class="cursor-grab text-on-surface-variant hover:text-primary flex items-center">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-bold shrink-0 w-8">OBJ 4</span>
+<input class="flex-1 bg-surface-container-lowest px-space-md py-space-xs rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary" type="text" value="Cultivate laboratory competency in defensive systems programming and memory profiling using C++17 and GDB tools."/>
+<button class="text-on-surface-variant hover:text-error p-space-xs rounded transition-colors opacity-70 group-hover:opacity-100" onclick="this.closest('.group').remove()" title="Delete objective" type="button">
+<span class="material-symbols-outlined text-[20px]">delete_outline</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION C: Course Outcomes (COs) & Bloom's Taxonomy -->
+<section class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-lg bg-surface-container text-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold">C</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Course Outcomes (COs) &amp; Bloom's Taxonomy</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Measurable behavioral statements linked to Bloom's cognitive taxonomy and assessments.</p>
+</div>
+</div>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-space-xs transition-colors" onclick="addOutcomeRow()" type="button">
+<span class="material-symbols-outlined text-[16px]">add_box</span>
+<span>Add Course Outcome</span>
+</button>
+</div>
+<!-- Outcomes Table/Cards Stack -->
+<div class="flex flex-col gap-space-md" id="outcomes-list">
+<!-- CO 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm hover:shadow-sm transition-shadow">
+<div class="flex items-center justify-between gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xxs rounded bg-primary text-on-primary font-code-tabular text-code-tabular font-bold">CO1</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Linear Representation &amp; Complexity Bounds</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xxs rounded-lg bg-[#E6F7F5] text-[#006053] font-label-sm text-label-sm font-bold flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+                    [L3] Apply
+                  </span>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-space-xxs rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Assessment:</span>
+<select class="bg-transparent font-label-md text-label-md text-primary font-semibold focus:outline-none cursor-pointer">
+<option selected="">Midterm Exam</option>
+<option>Lab Rubric</option>
+<option>End-Sem Exam</option>
+<option>Continuous Quiz</option>
+</select>
+</div>
+</div>
+</div>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary resize-none" rows="2">Apply asymptotic notations (O, Ω, Θ) to evaluate worst-case, best-case, and amortized complexity of linear data manipulation routines.</textarea>
+</div>
+<!-- CO 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm hover:shadow-sm transition-shadow">
+<div class="flex items-center justify-between gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xxs rounded bg-primary text-on-primary font-code-tabular text-code-tabular font-bold">CO2</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Hierarchical Structures &amp; Self-Balancing Trees</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xxs rounded-lg bg-[#EAF2FF] text-[#1E3A5F] font-label-sm text-label-sm font-bold flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+                    [L4] Analyze
+                  </span>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-space-xxs rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Assessment:</span>
+<select class="bg-transparent font-label-md text-label-md text-primary font-semibold focus:outline-none cursor-pointer">
+<option>Midterm Exam</option>
+<option selected="">Lab Rubric</option>
+<option>End-Sem Exam</option>
+</select>
+</div>
+</div>
+</div>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary resize-none" rows="2">Analyze balance criteria and rotational dynamics in AVL and Red-Black Trees under continuous insertions and deletions.</textarea>
+</div>
+<!-- CO 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm hover:shadow-sm transition-shadow">
+<div class="flex items-center justify-between gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xxs rounded bg-primary text-on-primary font-code-tabular text-code-tabular font-bold">CO3</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Graph Topologies &amp; Traversal Invariants</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xxs rounded-lg bg-[#F1ECFF] text-[#4E3A82] font-label-sm text-label-sm font-bold flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+                    [L4] Analyze
+                  </span>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-space-xxs rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Assessment:</span>
+<select class="bg-transparent font-label-md text-label-md text-primary font-semibold focus:outline-none cursor-pointer">
+<option>Midterm Exam</option>
+<option>Lab Rubric</option>
+<option selected="">End-Sem Exam</option>
+</select>
+</div>
+</div>
+</div>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary resize-none" rows="2">Formulate and analyze spanning tree heuristics, shortest paths, and topological sequencing on dense vs. sparse network graphs.</textarea>
+</div>
+<!-- CO 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm hover:shadow-sm transition-shadow">
+<div class="flex items-center justify-between gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xxs rounded bg-primary text-on-primary font-code-tabular text-code-tabular font-bold">CO4</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Collision Resolution &amp; Hashing Strategies</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xxs rounded-lg bg-[#E6F7F5] text-[#006053] font-label-sm text-label-sm font-bold flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+                    [L3] Apply
+                  </span>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-space-xxs rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Assessment:</span>
+<select class="bg-transparent font-label-md text-label-md text-primary font-semibold focus:outline-none cursor-pointer">
+<option selected="">Midterm Exam</option>
+<option>Lab Rubric</option>
+<option>End-Sem Exam</option>
+</select>
+</div>
+</div>
+</div>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary resize-none" rows="2">Implement robust universal hashing and open-addressing probes to eliminate clustering anomalies in high-throughput key-value lookups.</textarea>
+</div>
+<!-- CO 5 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm hover:shadow-sm transition-shadow">
+<div class="flex items-center justify-between gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xxs rounded bg-primary text-on-primary font-code-tabular text-code-tabular font-bold">CO5</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Synthesis &amp; Empirical Benchmark Synthesis</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xxs rounded-lg bg-[#FFF2DE] text-[#8C5300] font-label-sm text-label-sm font-bold flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+                    [L5] Evaluate
+                  </span>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-space-xxs rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Assessment:</span>
+<select class="bg-transparent font-label-md text-label-md text-primary font-semibold focus:outline-none cursor-pointer">
+<option>Midterm Exam</option>
+<option selected="">Lab Rubric</option>
+<option>End-Sem Exam</option>
+</select>
+</div>
+</div>
+</div>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary resize-none" rows="2">Evaluate empirical execution profiles and memory footprint across varied cache hierarchies, justifying optimal data structure selection.</textarea>
+</div>
+</div>
+</section>
+<!-- SECTION D: Module-Wise Syllabus & Textbooks -->
+<section class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-lg bg-surface-container text-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold">D</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Module-Wise Syllabus &amp; Textbooks</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Breakdown of pedagogical units, scheduled lecture hours, laboratory exercises, and standard references.</p>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold">42 Lecture Hours Total</span>
+</div>
+<!-- Syllabus Modules List -->
+<div class="flex flex-col gap-space-md">
+<!-- Module 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary font-bold">Module 1: Stacks, Queues &amp; Deques</span>
+<span class="px-space-sm py-space-xxs rounded bg-surface-container-highest text-primary font-code-tabular text-code-tabular font-bold">8 Lecture Hrs</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Array &amp; singly/doubly linked implementations; circular queues; amortized analysis; applications: infix-to-postfix translation, recursion unrolling, depth-limited search buffers.
+              </p>
+</div>
+<!-- Module 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary font-bold">Module 2: Trees &amp; Disjoint Sets</span>
+<span class="px-space-sm py-space-xxs rounded bg-surface-container-highest text-primary font-code-tabular text-code-tabular font-bold">10 Lecture Hrs</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Binary Search Trees; AVL tree rotations; Red-Black node balance criteria; B-Trees indexing fundamentals; Union-Find disjoint sets with path compression and rank union.
+              </p>
+</div>
+<!-- Module 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary font-bold">Module 3: Graph Algorithms &amp; Minimum Spanning Forests</span>
+<span class="px-space-sm py-space-xxs rounded bg-surface-container-highest text-primary font-code-tabular text-code-tabular font-bold">12 Lecture Hrs</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Adjacency matrices vs. lists; BFS, DFS, and topological sort; Prim's and Kruskal's MST algorithms; Dijkstra and Bellman-Ford shortest paths; Strongly Connected Components (Tarjan/Kosaraju).
+              </p>
+</div>
+<!-- Module 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary font-bold">Module 4: Hashing, Heaps &amp; Amortized Data Structures</span>
+<span class="px-space-sm py-space-xxs rounded bg-surface-container-highest text-primary font-code-tabular text-code-tabular font-bold">12 Lecture Hrs</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Binary heaps, Fibonacci heaps, universal hashing families, cryptographic collision resistance principles, bloom filters, and skip lists.
+              </p>
+</div>
+</div>
+<!-- Laboratory Practicals Suite Box -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">terminal</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Laboratory Practicum Suite (28 Contact Hrs)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">12 Hands-on Exercises + Mini-Project</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Includes comprehensive Valgrind memory leak profiling, custom allocator implementations in modern C++, benchmark automation, and graph visualizers.
+            </p>
+</div>
+<!-- Prescribed Textbooks & Reference Citations -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">Prescribed Textbooks &amp; References</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Textbook 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-md">
+<div class="w-10 h-14 rounded bg-surface-container-highest flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-bold">Introduction to Algorithms (CLRS)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cormen, Leiserson, Rivest, Stein</span>
+<span class="font-code-tabular text-code-tabular text-on-surface-variant mt-space-xxs">MIT Press, 4th Edition (2022)</span>
+</div>
+</div>
+<!-- Textbook 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-md">
+<div class="w-10 h-14 rounded bg-surface-container-highest flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-bold">Algorithms in C++, Parts 1-4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Robert Sedgewick</span>
+<span class="font-code-tabular text-code-tabular text-[#92400E] mt-space-xxs">Addison-Wesley (Update to 3rd Ed Recommended)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Compact Rail: Smart Validation Checklist & Quality Auditor (4 of 12 cols) -->
+<aside class="xl:col-span-4 flex flex-col gap-space-lg sticky top-20">
+<!-- Validation Checklist Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">policy</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Compliance Auditor</h3>
+</div>
+<span class="px-space-sm py-space-xxs rounded-full bg-[#EAF8EF] text-[#1F6838] font-label-sm text-label-sm font-bold">
+              Pass (88%)
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Automated verification against NBA-Tier 1 and ABET EAC syllabus requirements.
+          </p>
+<!-- Status Tallies -->
+<div class="grid grid-cols-3 gap-space-xs text-center py-space-xs">
+<div class="p-space-xs rounded-lg bg-[#EAF8EF]">
+<span class="font-headline-sm text-headline-sm text-[#1F6838] block">7</span>
+<span class="font-label-sm text-label-sm text-[#1F6838] uppercase">Passed</span>
+</div>
+<div class="p-space-xs rounded-lg bg-[#FFFBEB]">
+<span class="font-headline-sm text-headline-sm text-[#92400E] block">1</span>
+<span class="font-label-sm text-label-sm text-[#92400E] uppercase">Warning</span>
+</div>
+<div class="p-space-xs rounded-lg bg-[#FEF2F2]">
+<span class="font-headline-sm text-headline-sm text-[#991B1B] block">0</span>
+<span class="font-label-sm text-label-sm text-[#991B1B] uppercase">Blocker</span>
+</div>
+</div>
+<!-- Audit Checklist Items -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<!-- Item 1: Passed -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[#16A34A] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Credit Math Invariance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3L + 0T + 2P equals exactly 4.0 Institutional Units.</span>
+</div>
+</div>
+<!-- Item 2: Passed -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[#16A34A] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Bloom Cognitive Depth</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Course outcomes encompass higher orders L3 (Apply) to L5 (Evaluate).</span>
+</div>
+</div>
+<!-- Item 3: Passed -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[#16A34A] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Contact Hour Balance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sum of 4 modules strictly matches 42 assigned lecture hours.</span>
+</div>
+</div>
+<!-- Item 4: Warning -->
+<div class="p-space-sm rounded-lg bg-[#FFFBEB] flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[#D97706] text-[18px] shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-[#92400E] font-bold">Citation Revision Alert</span>
+<span class="font-body-sm text-body-sm text-[#92400E]">Reference textbook Sedgewick listed as 2nd edition; updated curriculum standards require 3rd edition.</span>
+</div>
+</div>
+<!-- Item 5: Passed -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[#16A34A] text-[18px] shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Assessment Alignment</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All 5 course outcomes linked to verified assessment instruments.</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-space-xs py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors" onclick="showNotification('Re-validating against NBA criteria... All rules verified.')" type="button">
+            Re-run Validation Engine
+          </button>
+</div>
+<!-- Co-Author & Version Tracking Widget -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary font-bold">Revision Context</span>
+<span class="font-code-tabular text-code-tabular text-on-surface-variant">v2.4-DRAFT</span>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dr. Aris Vance (Primary)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Last saved 4 mins ago</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xxs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex justify-between">
+<span>Department Review:</span>
+<span class="font-semibold text-secondary">Pending BoS Sign-off</span>
+</div>
+<div class="flex justify-between">
+<span>Target Cohort:</span>
+<span class="font-semibold text-on-surface">UG B.Tech CS 2024-28</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<!-- Bottom Action Bar -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md mt-space-sm">
+<a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" data-path="upload" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Previous: 1. Upload</span>
+</a>
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-end">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center gap-space-xs transition-colors" onclick="showNotification('Draft autosaved to database')" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Draft</span>
+</button>
+<a class="px-space-xl py-space-sm rounded-lg bg-[#006b5d] hover:bg-[#005046] text-on-primary font-label-lg text-label-lg flex items-center gap-space-xs transition-all shadow-md" data-path="co-po-pso-map" href="#">
+<span>Next: 3. CO–PO–PSO Map</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function showNotification(msg) {
+    const banner = document.getElementById('toast-banner');
+    const msgEl = document.getElementById('toast-message');
+    if (!banner || !msgEl) return;
+    msgEl.innerText = msg;
+    banner.classList.remove('opacity-0', 'translate-y-[-100px]');
+    banner.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      banner.classList.remove('opacity-100', 'translate-y-0');
+      banner.classList.add('opacity-0', 'translate-y-[-100px]');
+    }, 3200);
+  }
+
+  function addObjectiveItem() {
+    const container = document.getElementById('objectives-container');
+    if (!container) return;
+    const count = container.children.length + 1;
+    const newRow = document.createElement('div');
+    newRow.className = "p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center gap-space-md group";
+    newRow.innerHTML = `
+      <div class="cursor-grab text-on-surface-variant hover:text-primary flex items-center">
+        <span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+      </div>
+      <span class="font-label-lg text-label-lg text-primary font-bold shrink-0 w-8">OBJ \${count}</span>
+      <input type="text" placeholder="Enter new pedagogical course objective..." class="flex-1 bg-surface-container-lowest px-space-md py-space-xs rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary">
+      <button type="button" onclick="this.closest('.group').remove()" title="Delete objective" class="text-on-surface-variant hover:text-error p-space-xs rounded transition-colors opacity-70 group-hover:opacity-100">
+        <span class="material-symbols-outlined text-[20px]">delete_outline</span>
+      </button>
+    `;
+    container.appendChild(newRow);
+    showNotification(`Added Pedagogical Objective \${count}`);
+  }
+
+  function addOutcomeRow() {
+    const list = document.getElementById('outcomes-list');
+    if (!list) return;
+    const count = list.children.length + 1;
+    const card = document.createElement('div');
+    card.className = "p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm hover:shadow-sm transition-shadow";
+    card.innerHTML = `
+      <div class="flex items-center justify-between gap-space-sm flex-wrap">
+        <div class="flex items-center gap-space-sm">
+          <span class="px-space-sm py-space-xxs rounded bg-primary text-on-primary font-code-tabular text-code-tabular font-bold">CO\${count}</span>
+          <span class="font-label-md text-label-md text-on-surface font-semibold">New Course Outcome Target</span>
+        </div>
+        <div class="flex items-center gap-space-sm">
+          <span class="px-space-sm py-space-xxs rounded-lg bg-[#E6F7F5] text-[#006053] font-label-sm text-label-sm font-bold flex items-center gap-space-xxs">
+            <span class="material-symbols-outlined text-[14px]">psychology</span>
+            [L3] Apply
+          </span>
+          <div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-space-xxs rounded-lg shadow-sm">
+            <span class="font-label-sm text-label-sm text-on-surface-variant">Assessment:</span>
+            <select class="bg-transparent font-label-md text-label-md text-primary font-semibold focus:outline-none cursor-pointer">
+              <option selected>Continuous Assessment</option>
+              <option>Midterm Exam</option>
+              <option>Lab Rubric</option>
+              <option>End-Sem Exam</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <textarea rows="2" placeholder="Specify observable Bloom's taxonomy behavioral action verb and criterion..." class="w-full p-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary resize-none"></textarea>
+    `;
+    list.appendChild(card);
+    showNotification(`Added Course Outcome CO\${count}`);
+  }
+</script></main></div></body></html>

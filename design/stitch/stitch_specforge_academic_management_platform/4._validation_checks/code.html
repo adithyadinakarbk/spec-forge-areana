@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"error-container":"#ffdad6","inverse-surface":"#27313f","on-primary":"#ffffff","primary-fixed-dim":"#adc8f5","primary":"#022448","tertiary":"#142538","primary-container":"#1e3a5f","on-secondary-fixed":"#00201b","surface-container-low":"#eff4ff","on-tertiary-fixed-variant":"#38485d","surface-bright":"#f8f9ff","on-secondary-container":"#006f61","on-surface":"#121c2a","secondary-fixed":"#83f6e0","primary-fixed":"#d5e3ff","on-primary-container":"#8aa4cf","outline":"#74777f","tertiary-fixed-dim":"#b7c8e1","surface-tint":"#455f87","on-tertiary-container":"#94a4bd","secondary-container":"#80f3dd","surface-container-high":"#dee9fc","secondary":"#006b5d","surface-dim":"#d0dbed","on-surface-variant":"#43474e","on-primary-fixed":"#001c3b","inverse-primary":"#adc8f5","surface-container-lowest":"#ffffff","on-tertiary-fixed":"#0b1c30","tertiary-container":"#2a3a4f","tertiary-fixed":"#d3e4fe","on-tertiary":"#ffffff","on-secondary":"#ffffff","secondary-fixed-dim":"#65dac4","background":"#f8f9ff","outline-variant":"#c4c6cf","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-error-container":"#93000a","on-error":"#ffffff","on-primary-fixed-variant":"#2d486d","on-background":"#121c2a","error":"#ba1a1a","on-secondary-fixed-variant":"#005046","surface-container":"#e6eeff","surface-container-highest":"#d9e3f6","surface-variant":"#d9e3f6"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-compact":"1.25rem","margin":"2rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter-dense":"0.75rem","space-xxs":"0.125rem","space-md":"0.875rem","gutter":"1.5rem","space-lg":"1.25rem","space-2xl":"3rem","space-xl":"2rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-xl":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-sm":["Inter"],"code-tabular":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"label-lg":["Inter"],"headline-md":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["1.125rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0","fontWeight":"400"}],"headline-xl":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.025em","fontWeight":"700"}],"body-sm":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.005em","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.04em","fontWeight":"700"}],"code-tabular":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"-0.01em","fontWeight":"500"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"0","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.02em","fontWeight":"600"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md min-w-[280px]"><img alt="SpecForge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WO7xNFEgLtlIQVLIyMBGT4zEvZuX1qTtLWWoryLQBhtLOS9Bvh2-5I4byXR6Mb7dIjzntOE0QPqjz6NtKyzh7rl7KXsLa19MEBguHLdcpVGN0GQ9MkZh8LIeLcDfwvsnr7T0IdXFy8DSWlNtCw5zN_xz2klQDm1eMe_IRnzCknx_lIr2aONhYpyX1d3P0VkBo7dMS5kM1Jkhe8-9bIlMTu-MFxp8c4GL1sArh12RIhng"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">SpecForge</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-space-xxs">Academic Specification Workspace</span></div></div><div class="hidden xl:flex items-center gap-space-md px-space-md py-space-xs rounded-xl bg-surface-container-low"><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md text-on-surface-variant">Doc:</span><span class="font-label-lg text-label-lg text-primary">CS301: Data Structures &amp; Algorithms</span></div><div class="h-4 w-px bg-outline-variant"></div><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xxs rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span>In Review</span></div><div class="h-4 w-px bg-outline-variant"></div><div class="inline-flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[16px] text-secondary">cloud_done</span><span>Saved just now</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center p-space-xxs bg-surface-container rounded-lg"><button class="px-space-sm py-space-xxs rounded-lg font-label-md text-label-md bg-primary-container text-on-primary font-bold shadow-none" type="button">Author</button><button class="px-space-sm py-space-xxs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">Reviewer</button><button class="px-space-sm py-space-xxs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">HOD</button></div><div class="relative flex items-center justify-center"><button aria-label="Notifications" class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-0 right-0 -mt-1 -mr-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-on-primary font-label-sm text-[10px]">3</span></div><div class="h-8 w-px bg-outline-variant hidden sm:block"></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex flex-col text-right"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Dr. Aris Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant">Assoc. Prof CSE</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest z-40 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 pt-space-lg px-space-md overflow-y-auto"><div class="px-space-sm mb-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Workflow Pipeline</span></div><nav class="flex flex-col gap-space-xxs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="upload" href="#"><span class="material-symbols-outlined text-[20px]">cloud_upload</span><span>1. Upload</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="spec-editor" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span>2. Spec</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="co-po-pso-map" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>3. CO–PO–PSO Map</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-bold rounded-lg" data-path="compliance-checks" href="#"><span class="material-symbols-outlined text-[20px]">check_circle</span><span>4. Checks</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="approval-workflow" href="#"><span class="material-symbols-outlined text-[20px]">account_tree</span><span>5. Workflow</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="export-publish" href="#"><span class="material-symbols-outlined text-[20px]">download</span><span>6. Export</span></a></nav></div><div class="p-space-md"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-primary font-bold leading-tight">NBA &amp; ABET Compliant</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-space-xxs">Cycle 2024-25</span></div></div></div></aside><div class="pl-64"><main class="relative w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1366px] mx-auto px-margin py-gutter flex flex-col gap-space-lg">
+<!-- Top Section: Breadcrumb & Header -->
+<div class="flex flex-col gap-space-sm">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors flex items-center gap-space-xxs" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Home</span>
+</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Specifications</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-on-surface font-semibold">CS301</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-bold">4. Validation &amp; Checks</span>
+</nav>
+<!-- Title & Actions Row -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mt-space-xxs">
+<div class="flex flex-col max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Automated Validation &amp; Compliance Audit</h1>
+<span class="px-space-sm py-space-xxs rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">Engine v3.2</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+            Real-time rule verification against university academic regulations, contact-hour balance, and NBA/ABET Tier-1 accreditation criteria.
+          </p>
+</div>
+<!-- Header Action Triggers -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-low transition-colors" id="reRunBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary" id="reRunIcon">sync</span>
+<span>Re-Run Compliance Engine</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Export Full Audit Log</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 4 Pastel Summary Flashcards in a single row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Soft Teal -->
+<div class="p-space-lg rounded-xl bg-[#E6F7F5] shadow-sm flex flex-col justify-between transition-transform duration-150 hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-[#006f61] font-semibold uppercase tracking-wider">Overall Compliance</span>
+<div class="w-8 h-8 rounded-lg bg-white/70 flex items-center justify-center text-[#006f61]">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+</div>
+<div class="my-space-md">
+<span class="font-headline-xl text-headline-xl text-[#00201b] leading-none font-bold">96.4%</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-[#006f61]">Target: ≥ 90%</span>
+<span class="font-code-tabular text-code-tabular text-[#006f61] font-semibold">+4.2% vs draft</span>
+</div>
+</div>
+<!-- Card 2: Soft Rose -->
+<div class="p-space-lg rounded-xl bg-[#FFF0F0] shadow-sm flex flex-col justify-between transition-transform duration-150 hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-[#93000a] font-semibold uppercase tracking-wider">Fatal Errors</span>
+<div class="w-8 h-8 rounded-lg bg-white/70 flex items-center justify-center text-[#ba1a1a]">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">error</span>
+</div>
+</div>
+<div class="my-space-md">
+<span class="font-headline-xl text-headline-xl text-[#410002] leading-none font-bold">0 Blocking</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-[#93000a]">Ready for Submission</span>
+<span class="font-label-sm text-label-sm text-[#ba1a1a] font-bold">Clear</span>
+</div>
+</div>
+<!-- Card 3: Soft Amber -->
+<div class="p-space-lg rounded-xl bg-[#FFF5DF] shadow-sm flex flex-col justify-between transition-transform duration-150 hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-[#855300] font-semibold uppercase tracking-wider">Optimization Notices</span>
+<div class="w-8 h-8 rounded-lg bg-white/70 flex items-center justify-center text-[#9a6200]">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+</div>
+<div class="my-space-md">
+<span class="font-headline-xl text-headline-xl text-[#2b1700] leading-none font-bold">2 Advisories</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-[#855300]">Non-blocking Warnings</span>
+<span class="font-label-sm text-label-sm text-[#9a6200] font-semibold">Action suggested</span>
+</div>
+</div>
+<!-- Card 4: Soft Green -->
+<div class="p-space-lg rounded-xl bg-[#EAF8EF] shadow-sm flex flex-col justify-between transition-transform duration-150 hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-[#166534] font-semibold uppercase tracking-wider">Passed Audit Rules</span>
+<div class="w-8 h-8 rounded-lg bg-white/70 flex items-center justify-center text-[#16a34a]">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">checklist</span>
+</div>
+</div>
+<div class="my-space-md">
+<span class="font-headline-xl text-headline-xl text-[#052e16] leading-none font-bold">26 / 28</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-[#166534]">Institutional Constraints</span>
+<span class="font-code-tabular text-code-tabular text-[#166534] font-semibold">92.8% passing</span>
+</div>
+</div>
+</div>
+<!-- Main Workspace Container -->
+<div class="flex flex-col lg:flex-row gap-space-lg items-start">
+<!-- Primary Rules Inspection Area -->
+<div class="flex-1 w-full flex flex-col gap-space-md">
+<!-- Filter Tabs & Quick Search -->
+<div class="p-space-xs rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-sm">
+<!-- Filter Tabs -->
+<div class="flex items-center overflow-x-auto gap-space-xxs p-space-xxs" id="filterTabGroup">
+<button class="filter-tab active-tab px-space-md py-space-xs rounded-lg font-label-md text-label-md bg-primary-container text-on-primary font-bold shadow-none transition-colors whitespace-nowrap" data-category="all" type="button">
+              All Rules (28)
+            </button>
+<button class="filter-tab px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors whitespace-nowrap" data-category="hours" type="button">
+              Contact Hours &amp; Credits (8)
+            </button>
+<button class="filter-tab px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors whitespace-nowrap" data-category="blooms" type="button">
+              Bloom's Balance (6)
+            </button>
+<button class="filter-tab px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors whitespace-nowrap" data-category="copo" type="button">
+              CO-PO Alignment (8)
+            </button>
+<button class="filter-tab px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors whitespace-nowrap" data-category="refs" type="button">
+              References &amp; Textbooks (6)
+            </button>
+</div>
+<!-- Quick status indicator inside toolbar -->
+<div class="hidden sm:flex items-center gap-space-xs px-space-sm text-on-surface-variant font-label-sm text-label-sm shrink-0">
+<span class="w-2 h-2 rounded-full bg-[#16a34a]"></span>
+<span>NBA Cycle 2024-25 Validated</span>
+</div>
+</div>
+<!-- Issue & Rule Cards Deck -->
+<div class="flex flex-col gap-space-md" id="rulesDeck">
+<!-- Card 1 (Warning / Soft Amber Accent) - Rule #V-104 -->
+<article class="rule-card p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md transition-shadow hover:shadow-md" data-category="refs">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-[#FFF5DF] flex items-center justify-center shrink-0 text-[#9a6200]">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-code-tabular text-code-tabular text-on-surface-variant font-bold">Rule #V-104</span>
+<span class="h-3 w-px bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm px-space-xs py-space-xxs rounded bg-[#FFF5DF] text-[#855300] font-semibold">Advisory Warning</span>
+<span class="h-3 w-px bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">References &amp; Textbooks</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-space-xxs">Outdated Textbook Edition Detected</h2>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-space-xxs text-on-surface-variant font-code-tabular text-code-tabular shrink-0">
+<span class="material-symbols-outlined text-[16px] text-[#9a6200]">history</span>
+<span>Audited 2m ago</span>
+</div>
+</div>
+<!-- Detail Box -->
+<div class="p-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-[#9a6200] shrink-0 mt-0.5">info</span>
+<div class="flex flex-col gap-space-xs">
+<p>
+                  Recommended textbook <strong class="text-primary font-semibold">“Introduction to Algorithms”</strong> is listed as 3rd Edition (2009). University guidelines recommend 4th Edition (2022).
+                </p>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm mt-space-xxs">
+<span>Author: Cormen, Leiserson, Rivest, Stein</span>
+<span>ISBN-13: 978-0262046305</span>
+<span class="text-secondary font-semibold">Standard: Post-2020 editions preferred for core curricula</span>
+</div>
+</div>
+</div>
+<!-- Actions Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container transition-colors shadow-sm flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">published_with_changes</span>
+<span>Update to 4th Edition</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+                  Ignore Advisory
+                </button>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:text-secondary inline-flex items-center gap-space-xxs" type="button">
+<span>View Regulation Clause 8.2(c)</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 2 (Warning / Soft Amber Accent) - Rule #V-208 -->
+<article class="rule-card p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md transition-shadow hover:shadow-md" data-category="blooms">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-[#FFF5DF] flex items-center justify-center shrink-0 text-[#9a6200]">
+<span class="material-symbols-outlined text-[24px]">psychology</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-code-tabular text-code-tabular text-on-surface-variant font-bold">Rule #V-208</span>
+<span class="h-3 w-px bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm px-space-xs py-space-xxs rounded bg-[#FFF5DF] text-[#855300] font-semibold">Taxonomy Skew</span>
+<span class="h-3 w-px bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bloom's Balance</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-space-xxs">Bloom Cognitive Level Spread Skew</h2>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-space-xxs text-on-surface-variant font-code-tabular text-code-tabular shrink-0">
+<span class="material-symbols-outlined text-[16px] text-[#9a6200]">history</span>
+<span>Audited 2m ago</span>
+</div>
+</div>
+<!-- Detail Box -->
+<div class="p-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-[#9a6200] shrink-0 mt-0.5">schema</span>
+<div class="flex flex-col gap-space-xs">
+<p>
+                  CO4 &amp; CO5 both map to Level 4 (Analyze). For high-level electives, consider incorporating an explicit Level 6 (Create) laboratory milestone.
+                </p>
+<div class="flex flex-wrap items-center gap-space-xs font-label-sm text-label-sm mt-space-xxs">
+<span class="px-space-xs py-space-xxs rounded bg-surface-container text-on-surface">CO1: L2 Understand</span>
+<span class="px-space-xs py-space-xxs rounded bg-surface-container text-on-surface">CO2: L3 Apply</span>
+<span class="px-space-xs py-space-xxs rounded bg-surface-container text-on-surface">CO3: L3 Apply</span>
+<span class="px-space-xs py-space-xxs rounded bg-[#FFF5DF] text-[#855300] font-bold">CO4: L4 Analyze</span>
+<span class="px-space-xs py-space-xxs rounded bg-[#FFF5DF] text-[#855300] font-bold">CO5: L4 Analyze</span>
+</div>
+</div>
+</div>
+<!-- Actions Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Adjust in Spec Editor</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+                  Keep Current Mapping
+                </button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recommended: CO5 -&gt; L6 (Create) via Final Project</span>
+</div>
+</article>
+<!-- Card 3 (Passed / Soft Green Accent) - Rule #V-301 -->
+<article class="rule-card p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md transition-shadow hover:shadow-md" data-category="hours">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-[#EAF8EF] flex items-center justify-center shrink-0 text-[#16a34a]">
+<span class="material-symbols-outlined text-[24px]">timer</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-code-tabular text-code-tabular text-on-surface-variant font-bold">Rule #V-301</span>
+<span class="h-3 w-px bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm px-space-xs py-space-xxs rounded bg-[#EAF8EF] text-[#166534] font-semibold">Passed Rule</span>
+<span class="h-3 w-px bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Contact Hours &amp; Credits</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-space-xxs">L-T-P Contact Hours Balance Invariant</h2>
+</div>
+</div>
+<div class="inline-flex items-center gap-space-xxs px-space-sm py-space-xxs rounded-full bg-[#EAF8EF] text-[#166534] font-label-sm text-label-sm font-semibold shrink-0">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Passed Rule</span>
+</div>
+</div>
+<!-- Detail Box -->
+<div class="p-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-[#16a34a] shrink-0 mt-0.5">fact_check</span>
+<div class="flex flex-col gap-space-xs">
+<p>
+                  Lecture hours (42) + Practical hours (28) precisely sum to 70 total contact hours, satisfying 4.0 credit weighting.
+                </p>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-code-tabular text-code-tabular mt-space-xxs">
+<span>L: 3 hrs/wk (42 hrs)</span>
+<span>T: 0 hrs/wk (0 hrs)</span>
+<span>P: 2 hrs/wk (28 hrs)</span>
+<span class="text-[#166534] font-bold">Formula Ratio: 1L = 1cr, 2P = 1cr (3 + 1 = 4.0 cr)</span>
+</div>
+</div>
+</div>
+<!-- Inline Verification Metadata -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span class="flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+                Verified against Dean of Academics Curricular Standard 2024
+              </span>
+<a class="text-primary hover:underline font-semibold" href="#">Audit trace #LTP-4001</a>
+</div>
+</article>
+<!-- Card 4 (Passed / Soft Green Accent) - Rule #V-405 -->
+<article class="rule-card p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md transition-shadow hover:shadow-md" data-category="copo">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-[#EAF8EF] flex items-center justify-center shrink-0 text-[#16a34a]">
+<span class="material-symbols-outlined text-[24px]">hub</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-code-tabular text-code-tabular text-on-surface-variant font-bold">Rule #V-405</span>
+<span class="h-3 w-px bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm px-space-xs py-space-xxs rounded bg-[#EAF8EF] text-[#166534] font-semibold">Passed Rule</span>
+<span class="h-3 w-px bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CO-PO Alignment</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-space-xxs">PO Matrix Non-Zero Attainment</h2>
+</div>
+</div>
+<div class="inline-flex items-center gap-space-xxs px-space-sm py-space-xxs rounded-full bg-[#EAF8EF] text-[#166534] font-label-sm text-label-sm font-semibold shrink-0">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Passed Rule</span>
+</div>
+</div>
+<!-- Detail Box -->
+<div class="p-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-[#16a34a] shrink-0 mt-0.5">query_stats</span>
+<div class="flex flex-col gap-space-xs">
+<p>
+                  All primary engineering competencies (PO1, PO2, PO3, PO5) have strong correlation vectors &gt; 2.0.
+                </p>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-code-tabular text-code-tabular mt-space-xxs">
+<span>PO1 (Engineering Knowledge): 2.6</span>
+<span>PO2 (Problem Analysis): 2.8</span>
+<span>PO3 (Design/Development): 2.2</span>
+<span>PO5 (Modern Tool Usage): 2.4</span>
+</div>
+</div>
+</div>
+<!-- Inline Verification Metadata -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span class="flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+                NBA Tier-1 Criteria 2.1.2 Outcome Attainment Check Satisfied
+              </span>
+<a class="text-primary hover:underline font-semibold" href="#">View Vector Heatmap</a>
+</div>
+</article>
+</div>
+</div>
+<!-- Right Inspection Sidebar (Audit Summary & Accreditation Gauge) -->
+<aside class="w-full lg:w-[360px] shrink-0 flex flex-col gap-space-md">
+<!-- Live Audit Breakdown Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Audit Coverage</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Run #841</span>
+</div>
+<!-- Circular Radial Graph Widget (Inline SVG under 2KB) -->
+<div class="flex items-center justify-center p-space-md bg-surface-container-low rounded-xl">
+<div class="relative w-36 h-36 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<circle class="text-surface-container-high fill-none" cx="50" cy="50" r="42" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-secondary fill-none transition-all duration-1000" cx="50" cy="50" r="42" stroke="currentColor" stroke-dasharray="263.89" stroke-dashoffset="9.5" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-headline-lg text-headline-lg text-primary font-bold leading-none">96%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Tier-1 Fit</span>
+</div>
+</div>
+</div>
+<!-- Audit Metrics Progress List -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex flex-col gap-space-xxs">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface">NBA Tier-1 Criteria</span>
+<span class="font-code-tabular text-code-tabular text-secondary font-bold">100%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-full"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xxs">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface">ABET EAC Criterion 3</span>
+<span class="font-code-tabular text-code-tabular text-secondary font-bold">94%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[94%]"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xxs">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-surface">Univ. Academic Senate 2024</span>
+<span class="font-code-tabular text-code-tabular text-[#9a6200] font-bold">92%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-[#f59e0b] rounded-full w-[92%]"></div>
+</div>
+</div>
+</div>
+<!-- Quick Specs Info -->
+<div class="pt-space-sm border-t border-surface-container-high flex flex-col gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex justify-between">
+<span>Department:</span>
+<span class="text-on-surface font-semibold">Computer Science &amp; Eng</span>
+</div>
+<div class="flex justify-between">
+<span>Auditor Engine:</span>
+<span class="text-on-surface font-semibold">Ruleset v4.8 (Strict)</span>
+</div>
+<div class="flex justify-between">
+<span>Last Execution:</span>
+<span class="font-code-tabular text-code-tabular text-on-surface">14:28:02 UTC</span>
+</div>
+</div>
+</div>
+<!-- External Institutional Reference Card with Photo -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">assured_workload</span>
+<h4 class="font-label-lg text-label-lg text-primary">Accreditation Benchmark</h4>
+</div>
+<div class="relative w-full h-28 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern university campus engineering hall with students collaborating at glass review tables and academic boards, shot in crisp natural daylight with institutional blue architectural accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkIB90TRNheifWIFxj_N9CT7cEiRCBtDl6eiWpbPx2LPiw5onFTgppN8edjQ-uQ4Jgd5b_cQhhEQZ-vhj2yfhxyzuUr_mkZlEqixzbCzOaf3bE-e7pnXb9gycPnmKDisluWHjR-V3Knunir_MClIgOzWl1WfCMmFPMAK2cEd69as-ZIbCFyRWYndH3tWIsXQ7P3m9cMlG7EMk6L2RMrW8YHdEDH9qhj30QNYIJH3Fv"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px] flex items-end p-space-sm">
+<span class="font-label-sm text-label-sm text-on-primary bg-primary/80 px-space-xs py-space-xxs rounded font-semibold">Dean's Committee Approved</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Course specs passing automated rules with zero fatal errors are automatically forwarded to the Board of Studies review queue.
+          </p>
+</div>
+</aside>
+</div>
+<!-- Bottom Action Bar (Fixed or Edge-Aligned) -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<!-- Previous Step Button -->
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg text-primary font-label-lg text-label-lg hover:bg-surface-container-low transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Previous: CO–PO–PSO Map</span>
+</a>
+<!-- Middle Status & Secondary Actions -->
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" id="saveValidationBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Validation State</span>
+</button>
+<!-- Proceed to Next Primary CTA Button -->
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg hover:bg-on-secondary-container transition-colors shadow-sm" href="#">
+<span>Proceed to 5. Workflow Stages</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple tab filter interaction
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.filter-tab');
+    const cards = document.querySelectorAll('.rule-card');
+    const reRunBtn = document.getElementById('reRunBtn');
+    const reRunIcon = document.getElementById('reRunIcon');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+          t.classList.add('text-on-surface-variant');
+        });
+        tab.classList.add('bg-primary-container', 'text-on-primary', 'font-bold');
+        tab.classList.remove('text-on-surface-variant');
+
+        const cat = tab.getAttribute('data-category');
+        cards.forEach(card => {
+          if (cat === 'all' || card.getAttribute('data-category') === cat) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Re-run compliance engine micro-interaction
+    if (reRunBtn && reRunIcon) {
+      reRunBtn.addEventListener('click', () => {
+        reRunIcon.classList.add('animate-spin');
+        reRunBtn.disabled = true;
+        setTimeout(() => {
+          reRunIcon.classList.remove('animate-spin');
+          reRunBtn.disabled = false;
+        }, 800);
+      });
+    }
+  });
+</script></main></div></body></html>

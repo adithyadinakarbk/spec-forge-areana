@@ -1,0 +1,6 @@
+{
+  "name": "AcademiaSpec - Academic Precision Course & Accreditation Platform",
+  "description": "Authoritative course specification and curriculum accreditation authoring platform adhering to institutional compliance and outcome mapping.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
